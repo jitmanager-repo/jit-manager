@@ -5,11 +5,9 @@ Apresentar a JIT Manager como parceira de automação para atendimento e gestão
 
 ---
 
-## Home (Landing page)
-
 ### Hero
-**Título (opção A):** Gestão em tempo real para atendimento e vendas  
-**Subtítulo:** Automação + Kanban para organizar leads, acelerar respostas e não perder oportunidades — com implantação guiada.
+**Título (opção A):** Organize seus leads no WhatsApp e venda com mais previsibilidade  
+**Subtítulo:** Kanban + automação para acelerar respostas, garantir follow-up e não perder oportunidades — com implantação guiada em até 14 dias.
 
 **CTA principal:** Agendar uma conversa  
 **CTA secundário:** Falar no WhatsApp

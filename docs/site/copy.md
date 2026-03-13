@@ -63,6 +63,7 @@ A JIT Manager estrutura seu processo comercial e de atendimento com:
 - Implantação guiada e foco em resultado (tempo e organização)
 - Automação com padrão (menos improviso, mais previsibilidade)
 - Visão clara do funil (o que está em andamento e o que está travado)
+- **Tagline:** Menos conversa perdida. Mais venda fechada.
 
 ---
 

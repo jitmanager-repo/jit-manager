@@ -9,9 +9,29 @@ Coloque nesta pasta:
 - Fontes escolhidas (nomes + links)
 
 ## Checklist de marca (v1)
-- [ ] Posicionamento e promessa
-- [ ] Tagline
+- [ ] Posicionamento e promessa (ver Issue #1)
+- [ ] Tagline (ver Issue #3)
 - [ ] Tom de voz
 - [ ] Paleta (HEX)
 - [ ] Tipografia (títulos e texto)
 - [ ] Regras de uso do logo (tamanho mínimo, respiro, fundos)
+
+## Tom de voz (v1)
+**Estilo:** próximo e humano (profissional)
+
+**Princípios**
+1) Clareza acima de tudo  
+2) Parceiro(a) no dia a dia  
+3) Prático e orientado a resultado  
+
+**Usamos**
+- organizar, colocar ordem, etapas, follow-up
+- não perder conversa, responder mais rápido
+- previsibilidade, controle, visibilidade
+- implantação guiada, piloto, começar pelo essencial
+
+**Evitamos**
+- jargão técnico desnecessário
+- promessas exageradas
+- linguagem agressiva
+- “automatizar tudo” (preferimos “automatizar rotinas”)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW Home & Student X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="42.3332mm" height="42.3332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1712 1712"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil2 {fill:#0095DA}
+    .fil3 {fill:#00AEEF}
+    .fil1 {fill:#3FC8F4}
+    .fil4 {fill:#9CDCFA}
+    .fil5 {fill:#EE1551}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 0l1712 0 0 1712 -1712 0 0 -1712z"/>
+   </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_608810848">
+    <polygon id="1" class="fil0" points="817,-35 1749,-35 1749,891 1282,427 "/>
+    <polygon class="fil0" points="-32,-48 884,856 -32,1760 "/>
+    <polygon class="fil0" points="-67,1747 857,832 1780,1747 "/>
+    <polygon class="fil0" points="1749,1760 1272,1291 1749,823 "/>
+    <polygon class="fil0" points="1343,401 859,881 375,401 "/>
+    <polygon class="fil1" points="900,0 1715,0 1715,808 1306,402 "/>
+    <polygon class="fil0" points="1298,393 1764,857 1300,1319 834,855 "/>
+    <polygon class="fil2" points="3,34 835,856 3,1678 3,856 "/>
+    <polygon class="fil0" points="-68,-34 861,-34 1343,438 415,438 "/>
+    <polygon class="fil1" points="16,1712 857,880 1697,1712 857,1712 "/>
+    <polygon class="fil3" points="1715,1678 1321,1291 1715,904 1715,1291 "/>
+    <polygon class="fil4" points="1260,435 859,832 458,435 859,435 "/>
+    <polygon class="fil5" points="1298,442 1715,857 1300,1271 883,855 "/>
+    <polygon class="fil3" points="16,0 847,0 1260,404 429,404 "/>
+   </g>
+  </g>
+  <polygon class="fil6" points="0,0 1712,0 1712,1712 0,1712 "/>
+ </g>
+</svg>

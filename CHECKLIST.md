@@ -2,14 +2,14 @@
 _Início: 2026-03-13_
 
 ## Fase 1 — Marca (2–5 dias)
-- [ ] Posicionamento (1 parágrafo)
-- [ ] ICP (público-alvo) + dores + promessa
-- [ ] Tagline
-- [ ] Pitch 30s
-- [ ] Tom de voz (3 princípios)
-- [ ] Fontes (títulos e texto)
-- [ ] Paleta (3 cores + 2 neutras)
-- [ ] Manual básico (1 página PDF)
+- [X] Posicionamento (1 parágrafo)
+- [X] ICP (público-alvo) + dores + promessa
+- [X] Tagline
+- [X] Pitch 30s
+- [X] Tom de voz (3 princípios)
+- [X] Fontes (títulos e texto)
+- [X] Paleta (3 cores + 2 neutras)
+- [X] Manual básico (1 página PDF)
 
 ## Fase 2 — Site MVP (3–7 dias)
 - [ ] Estrutura da landing page (seções)

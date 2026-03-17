@@ -12,8 +12,13 @@ Este manual é gerado a partir de um arquivo fonte Typst.
 Na raiz do repositório:
 
 ```powershell
-typst compile --root . docs/brand/manual/Guia-de-marca-e-identidade.typ docs/brand/manual/Guia-de-marca-e-identidade.pdf
+.\docs\brand\manual\build.ps1
 ```
+
+### Fontes
+Este repositório inclui as fontes em `docs/brand/assets/fonts/`.
+
+Observação: as versões atuais de Inter/Rubik baixadas do Google Fonts podem ser *variable fonts* e o Typst pode emitir warnings sobre suporte limitado a variable fonts. O PDF ainda é gerado; valide visualmente se os pesos/itálicos ficaram corretos.
 
 ## Estrutura
 - `docs/brand/manual/Guia-de-marca-e-identidade.typ` — fonte do manual

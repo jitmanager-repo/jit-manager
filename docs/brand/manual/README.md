@@ -18,6 +18,8 @@ Na raiz do repositório:
 ### Fontes
 Este repositório inclui as fontes em `docs/brand/assets/fonts/`.
 
+> Nota: o pacote estático do Inter (Google Fonts) expõe famílias como `Inter 18pt/24pt/28pt`. Para evitar que o Typst pegue uma versão *variable* instalada no sistema (e para evitar warnings), o arquivo `.typ` referencia explicitamente `Inter 18pt` em vez de `Inter`.
+
 Observação: as versões atuais de Inter/Rubik baixadas do Google Fonts podem ser *variable fonts* e o Typst pode emitir warnings sobre suporte limitado a variable fonts. O PDF ainda é gerado; valide visualmente se os pesos/itálicos ficaram corretos.
 
 ## Estrutura

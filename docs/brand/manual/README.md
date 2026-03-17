@@ -12,7 +12,7 @@ Este manual é gerado a partir de um arquivo fonte Typst.
 Na raiz do repositório:
 
 ```powershell
-typst compile docs/brand/manual/Guia-de-marca-e-identidade.typ docs/brand/manual/Guia-de-marca-e-identidade.pdf
+typst compile --root . docs/brand/manual/Guia-de-marca-e-identidade.typ docs/brand/manual/Guia-de-marca-e-identidade.pdf
 ```
 
 ## Estrutura

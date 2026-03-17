@@ -1,6 +1,5 @@
-@'
 // Guia de marca e identidade — JIT Manager
-// Fonte do documento (Typst). Para gerar PDF, veja docs/brand/manual/README.md.
+// Typst 0.14.x compatible version (no page(background: color), no text(leading: ...))
 
 #set page(paper: "a4", margin: (top: 18mm, bottom: 18mm, left: 18mm, right: 18mm))
 
@@ -21,50 +20,56 @@
   white: rgb("#FFFFFF"),
 )
 
-// Tipografia (Issue #6)
-// - Títulos / marca: Rubik (600/700)
-// - Texto / UI: Inter (400/500/600)
-#let font_title = "Rubik"
-#let font_body = "Inter"
+// Tipografia (Issue #6): Rubik + Inter
+// Fallback para Arial se não estiverem instaladas
+#let font_title = ("Rubik", "Arial")
+#let font_body = ("Inter", "Arial")
 
-#set text(font: font_body, size: 10.5pt, fill: colors.text, leading: 1.35em)
+#set text(font: font_body, size: 10.5pt, fill: colors.text)
 #set heading(numbering: none)
+#set par(leading: 1.35em)
 
-// --- Capa
-#set page(margin: (top: 0mm, bottom: 0mm, left: 0mm, right: 0mm), background: colors.primary)
-#block(width: 100%, height: 100%, inset: (top: 32mm, left: 26mm, right: 26mm, bottom: 26mm))[
+#let fullpage(color, body) = [
+  // z-order: rect primeiro, conteúdo por cima
+  #place(top + left)[
+    #rect(width: 210mm, height: 297mm, fill: color, stroke: none)
+  ]
+  #block(width: 100%, height: 100%, inset: (top: 32mm, left: 26mm, right: 26mm, bottom: 26mm))[
+    #body
+  ]
+  #pagebreak()
+]
+
+// ===== Capa =====
+#fullpage(colors.primary, [
   #set text(font: font_title, fill: colors.white)
 
-  #set text(size: 64pt, weight: 700, leading: 0.95em)
+  #set text(size: 64pt, weight: 700)
   Guia de marca
   e identidade
 
   #v(14mm)
-  #set text(size: 14pt, weight: 400, leading: 1.25em)
+  #set text(font: font_body, size: 14pt, weight: 400)
   Marca: *#(brand.name)* \
   Tagline: #(brand.tagline)
-]
-#pagebreak()
+])
 
-// --- Abertura (azul)
-#set page(margin: (top: 0mm, bottom: 0mm, left: 0mm, right: 0mm), background: colors.primary)
-#block(width: 100%, height: 100%, inset: (top: 32mm, left: 26mm, right: 26mm, bottom: 26mm))[
+// ===== Abertura: Identidade visual =====
+#fullpage(colors.primary, [
   #set text(font: font_title, fill: colors.white)
-  #set text(size: 72pt, weight: 700, leading: 0.95em)
+
+  #set text(size: 72pt, weight: 700)
   Identidade
   visual
 
   #v(12mm)
-  #set text(font: font_body, size: 12pt, weight: 400, leading: 1.35em, fill: colors.white)
+  #set text(font: font_body, size: 12pt, weight: 400, fill: colors.white)
   O objetivo deste guia é padronizar o uso da marca #(brand.name) e garantir consistência
   em aplicações digitais e materiais de comunicação. Seguindo as instruções, preservamos
   a identidade e a clareza da comunicação.
-]
-#pagebreak()
+])
 
-// restaurar página padrão
-#set page(paper: "a4", margin: (top: 18mm, bottom: 18mm, left: 18mm, right: 18mm), background: none)
-
+// ===== Conteúdo =====
 = Símbolo e assinatura
 
 Prefira usar a versão principal do logo. Use variações apenas quando houver restrição de fundo,
@@ -74,17 +79,17 @@ tamanho, ou contexto (ex.: favicon, uso monocromático, impressão).
   #block[
     #image("../assets/logo/svg/logo-jit-manager.web.svg", width: 70mm)
     #v(2mm)
-    #text(size: 9pt, fill: colors.text)[*Principal (SVG web-friendly)*]
+    #text(size: 9pt)[*Principal (SVG web-friendly)*]
   ]
   #block[
     #rect(width: 70mm, height: 35mm, fill: colors.border, stroke: none)
     #v(2mm)
-    #text(size: 9pt, fill: colors.text)[*Variação (placeholder — V2)*]
+    #text(size: 9pt)[*Variação (placeholder — V2)*]
   ]
 ]
 
 #v(5mm)
-Os arquivos oficiais estão em:
+Arquivos oficiais:
 - `docs/brand/assets/logo/svg/`
 - `docs/brand/assets/logo/png/`
 - `docs/brand/assets/logo/favicon/`
@@ -108,18 +113,20 @@ Os arquivos oficiais estão em:
 - CTA / destaque: `#EE1551`
 - Links e ícones: `#0095DA`
 - Hover / detalhes: `#00AEEF`
-- Fundos leves: `#9CDCFA` ou `#3FC8F4` (sempre com bastante branco)
+- Fundos leves: `#9CDCFA` ou `#3FC8F4` (com bastante branco)
 - Texto sempre escuro (`#0F172A`) para contraste
 
 = Tipografia (v1)
 
 == Fonte escolhida
-- Títulos / Marca: **Rubik**
-- Texto / UI: **Inter**
+- Títulos / Marca: *Rubik* (600/700)
+- Texto / UI: *Inter* (400/500/600)
 
-== Pesos (weights)
-- Rubik (títulos): 600 e 700
-- Inter (texto): 400, 500 e 600
+== Regras simples
+- Títulos sempre em Rubik (600/700).
+- Parágrafos e UI em Inter (400/500; 600 só para ênfase).
+- Evitar caixa alta em textos longos.
+- Priorizar legibilidade: texto em `#0F172A` sobre fundo claro.
 
 == Exemplo de sizing (referência)
 - H1: 40–56px / 700
@@ -127,4 +134,3 @@ Os arquivos oficiais estão em:
 - H3: 20–24px / 600
 - Body: 16–18px / 400
 - Botões/CTA: 16px / 600
-'@ | Set-Content -Encoding utf8 .\docs\brand\manual\Guia-de-marca-e-identidade.typ

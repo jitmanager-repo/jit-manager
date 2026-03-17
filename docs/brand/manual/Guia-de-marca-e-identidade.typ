@@ -1,11 +1,15 @@
-﻿// Guia de marca e identidade â€” JIT Manager
+﻿// Guia de marca e identidade — JIT Manager
 // Typst 0.14.x compatible version (no page(background: color), no text(leading: ...))
 
-#set page(paper: "a4", margin: (top: 18mm, bottom: 18mm, left: 18mm, right: 18mm))
+#set page(
+  width: 297mm,
+  height: 210mm,
+  margin: (top: 18mm, bottom: 18mm, left: 18mm, right: 18mm),
+)
 
 #let brand = (
   name: "JIT Manager",
-  tagline: "O operacional no automÃ¡tico. VocÃª no estratÃ©gico.",
+  tagline: "O operacional no automático. Você no estratégico.",
 )
 
 #let colors = (
@@ -32,27 +36,33 @@
 #let fullpage(color, body) = [
   // z-order: rect primeiro, conteúdo por cima
   #place(top + left)[
-    #rect(width: 210mm, height: 297mm, fill: color, stroke: none)
+    #rect(width: 100%, height: 100%, fill: color, stroke: none)
   ]
-  #block(width: 100%, height: 100%, inset: (top: 32mm, left: 26mm, right: 26mm, bottom: 26mm))[
+  #block(
+  width: 100%,
+  height: 100%,
+  inset: (top: 20mm, left: 22mm, right: 22mm, bottom: 18mm),
+)[
     #body
   ]
   #pagebreak()
 ]
 
 // ===== Capa =====
-#fullpage(colors.primary, [
-  #set text(font: font_title, fill: colors.white)
-
-  #set text(size: 64pt, weight: 700)
-  Guia de marca
-  e identidade
-
-  #v(14mm)
-  #set text(font: font_body, size: 14pt, weight: 400)
-  Marca: *#(brand.name)* \
-  Tagline: #(brand.tagline)
-])
+#let fullpage(color, body) = [
+  // z-order: rect primeiro, conteúdo por cima
+  #place(top + left)[
+    #rect(width: 100%, height: 100%, fill: color, stroke: none)
+  ]
+  #block(
+    width: 100%,
+    height: 100%,
+    inset: (top: 20mm, left: 22mm, right: 22mm, bottom: 18mm),
+  )[
+    #body
+  ]
+  #pagebreak()
+]
 
 // ===== Abertura: Identidade visual =====
 #fullpage(colors.primary, [
@@ -64,16 +74,16 @@
 
   #v(12mm)
   #set text(font: font_body, size: 12pt, weight: 400, fill: colors.white)
-  O objetivo deste guia Ã© padronizar o uso da marca #(brand.name) e garantir consistÃªncia
-  em aplicaÃ§Ãµes digitais e materiais de comunicaÃ§Ã£o. Seguindo as instruÃ§Ãµes, preservamos
-  a identidade e a clareza da comunicaÃ§Ã£o.
+  O objetivo deste guia é padronizar o uso da marca #(brand.name) e garantir consistência
+  em aplicações digitais e materiais de comunicação. Seguindo as instruções, preservamos
+  a identidade e a clareza da comunicação.
 ])
 
-// ===== ConteÃºdo =====
-= SÃ­mbolo e assinatura
+// ===== Conteúdo =====
+= Símbolo e assinatura
 
-Prefira usar a versÃ£o principal do logo. Use variaÃ§Ãµes apenas quando houver restriÃ§Ã£o de fundo,
-tamanho, ou contexto (ex.: favicon, uso monocromÃ¡tico, impressÃ£o).
+Prefira usar a versão principal do logo. Use variações apenas quando houver restrição de fundo,
+tamanho, ou contexto (ex.: favicon, uso monocromático, impressão).
 
 #grid(columns: (1fr, 1fr), gutter: 10mm)[
   #block[
@@ -84,7 +94,7 @@ tamanho, ou contexto (ex.: favicon, uso monocromÃ¡tico, impressÃ£o).
   #block[
     #rect(width: 70mm, height: 35mm, fill: colors.border, stroke: none)
     #v(2mm)
-    #text(size: 9pt)[*VariaÃ§Ã£o (placeholder â€” V2)*]
+    #text(size: 9pt)[*Variação (placeholder — V2)*]
   ]
 ]
 
@@ -96,9 +106,9 @@ Arquivos oficiais:
 
 = Paleta de cores (v1)
 
-== Cores da marca (tela â€” HEX)
-- Azul 1 (primÃ¡ria): `#0095DA`
-- Azul 2 (secundÃ¡ria): `#00AEEF`
+== Cores da marca (tela — HEX)
+- Azul 1 (primária): `#0095DA`
+- Azul 2 (secundária): `#00AEEF`
 - Azul claro 1 (fundo/realce): `#9CDCFA`
 - Azul claro 2 (apoio): `#3FC8F4`
 - Magenta (accent/CTA): `#EE1551`
@@ -107,11 +117,11 @@ Arquivos oficiais:
 == Neutros
 - Texto principal: `#0F172A`
 - Fundo: `#FFFFFF`
-- Bordas/divisÃ³rias: `#E5E7EB`
+- Bordas/divisórias: `#E5E7EB`
 
 == Uso recomendado (site/redes)
 - CTA / destaque: `#EE1551`
-- Links e Ã­cones: `#0095DA`
+- Links e ícones: `#0095DA`
 - Hover / detalhes: `#00AEEF`
 - Fundos leves: `#9CDCFA` ou `#3FC8F4` (com bastante branco)
 - Texto sempre escuro (`#0F172A`) para contraste
@@ -119,18 +129,18 @@ Arquivos oficiais:
 = Tipografia (v1)
 
 == Fonte escolhida
-- TÃ­tulos / Marca: *Rubik* (600/700)
+- Títulos / Marca: *Rubik* (600/700)
 - Texto / UI: *Inter* (400/500/600)
 
 == Regras simples
-- TÃ­tulos sempre em Rubik (600/700).
-- ParÃ¡grafos e UI em Inter (400/500; 600 sÃ³ para Ãªnfase).
+- Títulos sempre em Rubik (600/700).
+- Parágrafos e UI em Inter (400/500; 600 só para ênfase).
 - Evitar caixa alta em textos longos.
 - Priorizar legibilidade: texto em `#0F172A` sobre fundo claro.
 
-== Exemplo de sizing (referÃªncia)
-- H1: 40â€“56px / 700
-- H2: 28â€“34px / 700
-- H3: 20â€“24px / 600
-- Body: 16â€“18px / 400
-- BotÃµes/CTA: 16px / 600
+== Exemplo de sizing (referência)
+- H1: 40–56px / 700
+- H2: 28–34px / 700
+- H3: 20–24px / 600
+- Body: 16–18px / 400
+- Botões/CTA: 16px / 600

@@ -8,9 +8,14 @@ Coloque nesta pasta:
 - Paleta de cores (HEX)
 - Fontes escolhidas (nomes + links)
 
+## Tagline (institucional)
+**O operacional no automático. Você no estratégico.**
+
+> Observação: frases como “Menos conversa perdida. Mais venda fechada.” devem ser tratadas como **campanhas** (ex.: módulo de atendimento/vendas), e não como tagline institucional.
+
 ## Checklist de marca (v1)
 - [ ] Posicionamento e promessa (ver Issue #1)
-- [ ] Tagline (ver Issue #3)
+- [ ] Tagline (ver Issue #10)
 - [ ] Tom de voz
 - [ ] Paleta (HEX)
 - [ ] Tipografia (títulos e texto)

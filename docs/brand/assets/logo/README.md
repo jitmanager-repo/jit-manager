@@ -1,4 +1,4 @@
-# Logos — JIT Manager
+﻿# Logos — JIT Manager
 
 Este diretório contém as versões oficiais do símbolo do JIT Manager.
 

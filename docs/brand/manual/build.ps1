@@ -1,1 +1,1 @@
-﻿typst compile --root . docs/brand/manual/Guia-de-marca-e-identidade.typ docs/brand/manual/Guia-de-marca-e-identidade.pdf
+﻿typst compile --root . --font-path docs/brand/assets/fonts/Inter --font-path docs/brand/assets/fonts/Rubik docs/brand/manual/Guia-de-marca-e-identidade.typ docs/brand/manual/Guia-de-marca-e-identidade.pdf

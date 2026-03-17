@@ -23,7 +23,7 @@
 // Tipografia (Issue #6): Rubik + Inter (fontes versionadas no repo)
 // Fallback para Arial se não estiverem instaladas
 #let font_title = ("Rubik", "Arial")
-#let font_body = ("Inter", "Arial")
+#let font_body = ("Inter 18pt", "Arial")
 
 #set text(font: font_body, size: 10.5pt, fill: colors.text)
 #set heading(numbering: none)

@@ -14,7 +14,7 @@ Plataforma JIT Manager: marca, site, docs, roadmap e, futuramente, o painel de g
 
 ## Fases
 - Fase 0 — Setup do repositório ✅
-- Fase 1 — Marca (posicionamento, ICP, tagline, tom de voz, paleta, tipografia)
+- Fase 1 — Marca (posicionamento, ICP, tagline, tom de voz, paleta, tipografia) ✅
 - Fase 2 — Site MVP (jitmanager.com.br)
 - Fase 3 — Kit comercial e operação
 - Fase 4 — Produto e piloto (Chatwoot + painel + automações)

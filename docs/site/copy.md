@@ -1,13 +1,13 @@
 # Site — Copy (PT-BR)
 
 ## Objetivo do site
-Apresentar a JIT Manager como parceira de automação para atendimento e gestão comercial (leads), com foco em ganho de tempo, organização e previsibilidade.
+Apresentar a JIT Manager como parceira de automação operacional para empresários: reduzir erros, padronizar rotinas e ganhar tempo — com impacto direto em atendimento, operações e (quando aplicável) vendas.
 
 ---
 
 ### Hero
-**Título (opção A):** Organize seus leads no WhatsApp e venda com mais previsibilidade  
-**Subtítulo:** Kanban + automação para acelerar respostas, garantir follow-up e não perder oportunidades — com implantação guiada em até 14 dias.
+**Título (opção A):** O operacional no automático. Você no estratégico.  
+**Subtítulo:** Automação + processos para responder com padrão, eliminar tarefas manuais e dar previsibilidade à rotina — com implantação guiada em até 14 dias.
 
 **CTA principal:** Agendar uma conversa  
 **CTA secundário:** Falar no WhatsApp
@@ -15,36 +15,38 @@ Apresentar a JIT Manager como parceira de automação para atendimento e gestão
 ---
 
 ### Problema (dor)
-Empresas que vendem e atendem pelo WhatsApp acabam sofrendo com:
+Empresas que operam no dia a dia pelo WhatsApp e por rotinas manuais acabam sofrendo com:
 - mensagens perdidas
 - falta de follow-up
 - ausência de padrão no atendimento
-- dificuldade de acompanhar o funil comercial
+- tarefas repetitivas consumindo o tempo do dono/equipe
+- erros operacionais (esquecimentos, demora, respostas inconsistentes)
 - dependência de pessoas específicas para “fazer acontecer”
 
 ---
 
 ### Solução
-A JIT Manager estrutura seu processo comercial e de atendimento com:
-- **Kanban de etapas** (da entrada do lead ao fechamento)
+A JIT Manager estrutura seus processos de atendimento e operação com:
+- **Kanban de etapas** (da entrada do pedido/lead ao encerramento)
 - **Automação de tarefas e mensagens** (apresentação, FAQ, envio de arquivos, lembretes)
+- **Padrões e playbooks** (respostas e rotinas consistentes)
 - **Visibilidade em tempo real** (o que está parado, o que precisa de ação, e por quê)
 
 ---
 
 ### Como funciona (3 passos)
-1. **Organização:** definimos suas etapas e configuramos seu Kanban  
+1. **Organização:** definimos etapas e responsabilidades  
 2. **Automação:** criamos playbooks (respostas, materiais e rotinas)  
-3. **Acompanhamento:** você monitora tudo em tempo real e melhora continuamente
+3. **Acompanhamento:** você monitora em tempo real e melhora continuamente
 
 ---
 
 ### Casos de uso
-**Gestão de leads (comercial)**
-- triagem e qualificação
-- follow-up automático
-- envio de catálogo e materiais
-- encaminhamento para vendedor
+**Operação e rotinas**
+- lembretes e alertas
+- distribuição de conversas por equipe
+- respostas padronizadas e envio automático de materiais
+- relatórios simples do que está acontecendo
 
 **Atendimento ao cliente**
 - dúvidas frequentes (FAQ)
@@ -52,34 +54,36 @@ A JIT Manager estrutura seu processo comercial e de atendimento com:
 - coleta de informações (ex.: cidade, volume, urgência)
 - status claro do atendimento
 
-**Rotinas internas**
-- lembretes e alertas
-- distribuição de conversas por equipe
-- relatórios simples do que está acontecendo
+**Gestão de oportunidades (quando aplicável)**
+- triagem e qualificação
+- follow-up automático
+- envio de catálogo e materiais
+- encaminhamento para vendedor
 
 ---
 
 ### Diferenciais
-- Implantação guiada e foco em resultado (tempo e organização)
+- Implantação guiada e foco em resultado (tempo e consistência)
 - Automação com padrão (menos improviso, mais previsibilidade)
-- Visão clara do funil (o que está em andamento e o que está travado)
-- **Tagline:** Menos conversa perdida. Mais venda fechada.
+- Menos erro operacional (tarefas feitas do jeito certo, sempre)
+- **Tagline institucional:** O operacional no automático. Você no estratégico.
+- **Frase de campanha (Atendimento/Vendas):** Menos conversa perdida. Mais venda fechada.
 
 ---
 
 ### CTA final
-**Título:** Quer organizar seu atendimento e vender com mais previsibilidade?  
-**Texto:** Vamos mapear seu processo e montar um piloto rápido.  
+**Título:** Quer tirar o peso do operacional e ganhar previsibilidade?  
+**Texto:** Vamos mapear suas rotinas e montar um piloto rápido.  
 **Botão:** Agendar uma conversa
 
 ---
 
 ## FAQ (rascunho)
 **1) A JIT Manager é um CRM?**  
-A JIT Manager entrega gestão e automação do processo comercial e de atendimento, com foco em operação no dia a dia.
+A JIT Manager entrega automação e organização de processos (atendimento e rotinas), com foco em operação no dia a dia.
 
 **2) Funciona para empresas pequenas?**  
-Sim. Quanto menor a equipe, maior o ganho com padronização e follow-up.
+Sim. Quanto menor a equipe, maior o ganho com padronização e redução de retrabalho.
 
 **3) Dá para usar no WhatsApp?**  
 Sim. O canal pode ser WhatsApp e outros, conforme necessidade.

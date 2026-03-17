@@ -1,4 +1,4 @@
-# Guia de marca e identidade — JIT Manager
+﻿# Guia de marca e identidade — JIT Manager
 
 Este manual é gerado a partir de um arquivo fonte Typst.
 

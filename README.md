@@ -25,6 +25,7 @@ Transformar a base de marca já criada em uma operação validável:
 
 ## Fluxo de Issues
 - Toda issue deve entrar automaticamente no Projects oficial do repositório.
+- Toda issue em execução deve estar na coluna `Em andamento` do board `JIT Manager - Roadmap`.
 - Configuração e validação (via repository secrets): `docs/process/projects.md`
 
 ## Macrofases

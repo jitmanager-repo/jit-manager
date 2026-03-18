@@ -12,6 +12,10 @@ O workflow `.github/workflows/auto-add-issues-to-project.yml` roda quando a issu
 
 E adiciona a issue no Projects configurado.
 
+O workflow `.github/workflows/sync-issue-status-in-project.yml` sincroniza o status no board:
+- `assigned` ou `reopened` -> `Em andamento`
+- `closed` -> `Concluído`
+
 ## Configuração obrigatória
 ### 1) Repository Secret (URL do Project)
 Criar em `Settings > Secrets and variables > Actions > Secrets`:
@@ -29,6 +33,8 @@ Criar em `Settings > Secrets and variables > Actions > Secrets`:
 1. Criar uma issue de teste.
 2. Conferir a aba Actions para ver execução do workflow.
 3. Verificar se a issue entrou no Projects.
+4. Atribuir a issue para alguém e verificar se foi para `Em andamento`.
+5. Fechar a issue e verificar se foi para `Concluído`.
 
 ## Regra operacional
 Sem os dois secrets configurados, a automação não funciona.

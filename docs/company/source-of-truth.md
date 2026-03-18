@@ -52,6 +52,8 @@ Implantação guiada em até 14 dias.
 
 ### Ativo estrategico relacionado
 - Secretaria Eletronica: `docs/company/secretaria-eletronica.md`
+- Provador Virtual: `docs/company/provador-virtual.md`
+- Quadro de decisao: `docs/company/ativos-em-avaliacao.md`
 
 ## 4) Dores priorizadas e ganhos esperados (fase 1)
 ### Dores priorizadas

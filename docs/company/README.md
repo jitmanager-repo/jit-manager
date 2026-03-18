@@ -7,6 +7,8 @@ Documentos-base para direcionamento empresarial da JIT Manager.
 - `direcionamento.md`: definição oficial da empresa, posicionamento e fronteiras
 - `foco-principal.md`: ICP, dores, oferta principal e escopo inicial
 - `secretaria-eletronica.md`: definição do ativo, dores resolvidas e ganhos esperados
+- `provador-virtual.md`: definição do ativo, dores resolvidas e ganhos esperados
+- `ativos-em-avaliacao.md`: quadro de decisão de portfolio dos ativos
 - `modelo-operacional-v1.md`: entrega, suporte e acompanhamento padrão
 - `criterios-cnpj.md`: critérios objetivos para abrir CNPJ com base em evidências
 

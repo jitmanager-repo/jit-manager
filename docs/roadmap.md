@@ -1,55 +1,47 @@
-# JIT Manager — Roadmap (início 2026-03-13)
+# JIT Manager — Roadmap (revisado em 2026-03-17)
 
-## Objetivo (MVP de presença + operação)
-Criar a base da marca, site e kit comercial para começar a prospectar e operar os primeiros clientes.
-
----
-
-## Semana 1 (2026-03-13 a 2026-03-19) — Marca + mensagem
-Entregas:
-- Posicionamento (1 parágrafo)
-- ICP (público-alvo inicial) + dores + promessa
-- Tagline + pitch 30s
-- Tom de voz (3 princípios)
-- Paleta e fontes (proposta v1)
-- Manual básico v1 (1 página)
-
-Critério de pronto:
-- Conseguimos explicar o que é a JIT Manager em 30s.
-- Temos padrões mínimos para produzir site e materiais.
+## Objetivo
+Definir com precisão a proposta da JIT Manager, colocar o institucional no ar e validar com MVP real a viabilidade de abrir CNPJ.
 
 ---
 
-## Semana 2 (2026-03-20 a 2026-03-26) — Site MVP no ar
+## Semana 1 — Direcionamento da empresa
 Entregas:
-- Copy da landing page (PT-BR)
-- CTA funcionando (WhatsApp e/ou formulário)
-- jitmanager.com.br publicado
-- E-mail profissional (contato@jitmanager.com.br)
-- Analytics instalado
+- Definição oficial da JIT Manager (posicionamento e escopo)
+- Foco principal da empresa (ICP, dores e oferta inicial)
+- Documento de critérios de decisão para MVP e CNPJ
 
 Critério de pronto:
-- Um visitante entende o serviço e consegue solicitar contato.
+- Qualquer pessoa do time consegue explicar em 30s o que a JIT Manager faz, para quem faz e qual resultado entrega.
 
 ---
 
-## Semana 3 (2026-03-27 a 2026-04-02) — Kit comercial
+## Semana 2 — Institucional e presença digital
 Entregas:
-- Deck (6–8 slides)
-- Proposta comercial (modelo)
-- Roteiro de demo (15–20 min)
-- Termos e Privacidade (básico)
+- Arquitetura do site institucional
+- Copy final de páginas principais
+- Página de privacidade e termos iniciais
+- Site publicado com CTA e analytics
 
 Critério de pronto:
-- Dá para apresentar e fechar um piloto com clareza de escopo.
+- Visitante entende a proposta, confia na operação e executa um CTA rastreável.
 
 ---
 
-## Semana 4 (2026-04-03 a 2026-04-09) — Preparar produto (descoberta)
+## Semanas 3 e 4 — MVP de validação
 Entregas:
-- Definição do MVP do painel JIT Manager (escopo fechado)
-- Arquitetura (Chatwoot + painel + automações)
-- Backlog inicial para desenvolvimento
+- Escopo de MVP fechado (mínimo viável, sem excesso de features)
+- Piloto com 1 a 3 clientes-alvo
+- Instrumentação de métricas de valor e conversão
+- Relatório de viabilidade (com recomendação sobre CNPJ)
 
 Critério de pronto:
-- Lista de features “MVP” clara e priorizada.
+- Existe evidência de dor real, adesão à solução e potencial de receita recorrente.
+
+---
+
+## Marco de decisão — CNPJ
+Abrir CNPJ somente quando os sinais abaixo estiverem atendidos:
+- Demanda qualificada recorrente
+- Capacidade operacional mínima comprovada
+- Unidade econômica inicial positiva ou com caminho claro para positividade

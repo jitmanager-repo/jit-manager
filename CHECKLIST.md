@@ -1,32 +1,35 @@
 # JIT Manager — Checklist mestre
 _Início: 2026-03-13_
 
-## Fase 1 — Marca (2–5 dias)
-- [X] Posicionamento (1 parágrafo)
-- [X] ICP (público-alvo) + dores + promessa
-- [X] Tagline
-- [X] Pitch 30s
-- [X] Tom de voz (3 princípios)
-- [X] Fontes (títulos e texto)
-- [X] Paleta (3 cores + 2 neutras)
-- [X] Manual básico (1 página PDF)
+## Fase 0 — Base inicial (concluída)
+- [X] Setup do repositório
+- [X] Identidade da marca (tagline, tom, fontes, paleta)
+- [X] Manual de marca v1
 
-## Fase 2 — Site MVP (3–7 dias)
-- [ ] Estrutura da landing page (seções)
-- [ ] Copy completa (PT-BR)
-- [ ] CTA (WhatsApp/Form/Calendly)
-- [ ] DNS do jitmanager.com.br apontando para a hospedagem
-- [ ] E-mail profissional (contato@jitmanager.com.br)
-- [ ] Publicar site
-- [ ] Analytics
+## Fase 1 — Direcionamento da empresa (1 semana)
+- [ ] Definição oficial: o que é a JIT Manager
+- [ ] Definição de fronteira: o que não é a JIT Manager
+- [ ] Oferta principal inicial (produto-serviço de entrada)
+- [ ] ICP principal (segmento, porte, canal, maturidade)
+- [ ] Dores priorizadas (top 3) e ganhos esperados
+- [ ] Proposta de valor em 1 frase e pitch de 30s revisado
+- [ ] Modelo operacional inicial (entrega, suporte, acompanhamento)
 
-## Fase 3 — Kit comercial e operação (1–2 semanas)
-- [ ] Deck 6–8 slides
-- [ ] Proposta comercial (modelo)
-- [ ] Roteiro de demo
-- [ ] Termos e Privacidade (básico)
+## Fase 2 — Institucional e site (1 semana)
+- [ ] Arquitetura do site institucional (seções e objetivos)
+- [ ] Copy institucional final (home, sobre, solução, contato, FAQ)
+- [ ] CTA principal e secundário definidos
+- [ ] Página legal mínima (privacidade + termos iniciais)
+- [ ] Publicar site institucional
+- [ ] Analytics e eventos de conversão
 
-## Fase 4 — Produto e piloto (após 1–3)
-- [ ] Definir escopo MVP do produto
-- [ ] Definir arquitetura (Chatwoot + painel)
-- [ ] Piloto com 1 cliente
+## Fase 3 — MVP de validação (2 a 4 semanas)
+- [ ] Definir escopo do MVP (funcionalidades mínimas)
+- [ ] Definir hipótese de valor e critérios de sucesso
+- [ ] Implementar piloto operacional com 1 a 3 clientes
+- [ ] Medir métricas de validação (interesse, ativação, retenção)
+- [ ] Medir viabilidade financeira inicial (receita, custo, margem)
+- [ ] Decisão formal: abrir CNPJ agora, adiar ou pivotar
+
+## Critério de avanço
+- Avançar para a fase seguinte apenas com critérios de pronto documentados e evidências mínimas.

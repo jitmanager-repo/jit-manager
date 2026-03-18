@@ -1,27 +1,36 @@
 # Site — Copy (PT-BR)
 
+> Fonte canônica de mensagem, ICP e oferta: `docs/company/source-of-truth.md`
+
 ## Objetivo do site
-Apresentar a JIT Manager como parceira de automação operacional para empresários: reduzir erros, padronizar rotinas e ganhar tempo — com impacto direto em atendimento, operações e (quando aplicável) vendas.
+Apresentar a JIT Manager como parceira de automação operacional para pequenas e médias empresas, com foco inicial em operação comercial via WhatsApp e Instagram: reduzir erros, padronizar rotinas e gerar previsibilidade.
+
+## Diretriz de mensagem (harmonizada)
+- Tagline institucional (fixa): **O operacional no automático. Você no estratégico.**
+- Frases de campanha: variam por contexto (operações, atendimento, vendas, conteúdo)
+- Pitch e promessa: linguagem simples, prática e orientada a resultado
 
 ---
 
 ### Hero
 **Título (opção A):** O operacional no automático. Você no estratégico.  
-**Subtítulo:** Automação + processos para responder com padrão, eliminar tarefas manuais e dar previsibilidade à rotina — com implantação guiada em até 14 dias.
+**Subtítulo:** Estruturamos seu atendimento e operação com Kanban + automação para você responder com padrão, evitar perda de conversas e ganhar previsibilidade no dia a dia. Implantação guiada em até 14 dias.
 
 **CTA principal:** Agendar uma conversa  
 **CTA secundário:** Falar no WhatsApp
 
+**Mensagem de apoio (opcional):** Menos conversa perdida. Mais venda fechada.
+
 ---
 
 ### Problema (dor)
-Empresas que operam no dia a dia pelo WhatsApp e por rotinas manuais acabam sofrendo com:
-- mensagens perdidas
-- falta de follow-up
-- ausência de padrão no atendimento
-- tarefas repetitivas consumindo o tempo do dono/equipe
-- erros operacionais (esquecimentos, demora, respostas inconsistentes)
-- dependência de pessoas específicas para “fazer acontecer”
+Pequenos varejos e operações com atendimento intenso por WhatsApp e Instagram acabam sofrendo com:
+- mensagens perdidas (principalmente em promoções)
+- falta de follow-up após o primeiro contato
+- atendimento sem padrão (informação incompleta ou inconsistente)
+- desorganização de pedidos (pagamento, entrega, retirada, encomendas)
+- falta de priorização do que está quente no funil
+- dependência de pessoas especificas para manter a operação de pé
 
 ---
 
@@ -39,26 +48,46 @@ A JIT Manager estrutura seus processos de atendimento e operação com:
 2. **Automação:** criamos playbooks (respostas, materiais e rotinas)  
 3. **Acompanhamento:** você monitora em tempo real e melhora continuamente
 
+**Resultado esperado:** mais velocidade de resposta, follow-up consistente e controle claro do que está parado e do que avançou.
+
 ---
 
-### Casos de uso
+### Casos de uso (campanhas por contexto)
 **Operação e rotinas**
+- Menos tarefa no braço. Mais negócio na cabeça.
+- Menos apagar incêndio. Mais evolução constante.
+- Menos retrabalho. Mais tempo de qualidade.
+
+Aplicações:
 - lembretes e alertas
 - distribuição de conversas por equipe
 - respostas padronizadas e envio automático de materiais
 - relatórios simples do que está acontecendo
 
 **Atendimento ao cliente**
+- Menos espera. Mais confiança.
+- Menos resposta no improviso. Mais padrão que encanta.
+- Menos conversa perdida. Mais cliente bem cuidado.
+
+Aplicações:
 - dúvidas frequentes (FAQ)
 - padronização de respostas
 - coleta de informações (ex.: cidade, volume, urgência)
 - status claro do atendimento
 
-**Gestão de oportunidades (quando aplicável)**
+**Atendimento e vendas (quando aplicável)**
+- Menos conversa perdida. Mais venda fechada.
+
+Aplicações:
 - triagem e qualificação
 - follow-up automático
 - envio de catálogo e materiais
 - encaminhamento para vendedor
+
+**Conteúdo e distribuição (quando aplicável)**
+- Menos postagem repetida. Mais presença em todo lugar.
+- Menos rotina mecânica. Mais tempo pra criar.
+- Menos fricção. Mais consistência.
 
 ---
 
@@ -66,8 +95,7 @@ A JIT Manager estrutura seus processos de atendimento e operação com:
 - Implantação guiada e foco em resultado (tempo e consistência)
 - Automação com padrão (menos improviso, mais previsibilidade)
 - Menos erro operacional (tarefas feitas do jeito certo, sempre)
-- **Tagline institucional:** O operacional no automático. Você no estratégico.
-- **Frase de campanha (Atendimento/Vendas):** Menos conversa perdida. Mais venda fechada.
+- Foco inicial em canais de alta demanda operacional (WhatsApp/Instagram)
 
 ---
 
@@ -78,15 +106,25 @@ A JIT Manager estrutura seus processos de atendimento e operação com:
 
 ---
 
+## Pitch 30s (v2)
+A JIT Manager coloca o operacional no automático, para você voltar ao estratégico.
+Em vez de perder tempo com tarefas repetitivas, respostas no improviso e rotinas que geram erro, você ganha padrão, consistência e tranquilidade no dia a dia.
+
+Você foca no seu produto, na sua equipe e no crescimento do negócio.
+A automação cuida do resto, do jeito certo, sempre.
+
+---
+
+
 ## FAQ (rascunho)
 **1) A JIT Manager é um CRM?**  
 A JIT Manager entrega automação e organização de processos (atendimento e rotinas), com foco em operação no dia a dia.
 
 **2) Funciona para empresas pequenas?**  
-Sim. Quanto menor a equipe, maior o ganho com padronização e redução de retrabalho.
+Sim. O foco inicial é justamente equipe enxuta com alto volume de conversas e pouco padrão operacional.
 
 **3) Dá para usar no WhatsApp?**  
-Sim. O canal pode ser WhatsApp e outros, conforme necessidade.
+Sim. O foco de entrada é WhatsApp e Instagram, podendo evoluir para outros canais.
 
 **4) Quanto tempo leva para implantar?**  
 Depende do escopo. Um piloto pode ser configurado rapidamente.

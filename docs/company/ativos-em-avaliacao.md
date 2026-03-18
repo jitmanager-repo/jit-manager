@@ -16,6 +16,27 @@ Evitar decisao por intuicao isolada. Cada ativo deve ser avaliado por encaixe no
 - Documento base: docs/company/provador-virtual.md
 - Foco principal: geracao de criativos comerciais com combinacao de imagens de cliente/produto
 
+## Decisao GO/HOLD/NO-GO por ativo (ciclo atual)
+### Secretaria Eletronica
+- Decisao atual: HOLD
+- Justificativa:
+	- Forte aderencia ao ICP v1 consolidado e ao posicionamento comercial atual
+	- Dor central recorrente e mensuravel (atendimento, follow-up, agendamento)
+	- Falta consolidar evidencias minimas de campo antes de promover para GO formal
+
+### Provador Virtual
+- Decisao atual: HOLD
+- Justificativa:
+	- Potencial de ganho comercial e produtividade em criacao de ativos visuais
+	- Aderencia parcial ao ICP atual (mais forte em operacao de marketing/comercial)
+	- Exige validacao adicional de viabilidade operacional e risco de uso de imagem
+
+## Portfolio inicial recomendado da JIT Manager
+- Ativo principal recomendado (go-to-market): Secretaria Eletronica
+- Ativo secundario recomendado (trilha de validacao): Provador Virtual
+- Regra de promocao para GO formal (qualquer ativo): cumprir evidencias minimas e atender 4 de 6 criterios de avaliacao
+- Janela de revisao desta decisao: fechamento da Fase 3
+
 ## Criterios de avaliacao
 1. Dor relevante e frequente no ICP alvo
 2. Clareza de ganho mensuravel para o cliente

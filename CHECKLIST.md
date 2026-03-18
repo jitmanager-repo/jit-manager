@@ -7,6 +7,7 @@ _Início: 2026-03-13_
 - [X] Manual de marca v1
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
+- Status: Em andamento (Issue #14)
 - [ ] Definição oficial: o que é a JIT Manager
 - [ ] Definição de fronteira: o que não é a JIT Manager
 - [ ] Oferta principal inicial (produto-serviço de entrada)

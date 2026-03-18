@@ -25,6 +25,8 @@ Colocar ordem no operacional para que o dono e a equipe ganhem previsibilidade, 
 ## Posicionamento (versão executiva)
 A JIT Manager entra onde a operação depende demais de esforço manual, conversas dispersas e memória das pessoas, e transforma esse cenário em fluxo estruturado com automações úteis.
 
+> Nota: este posicionamento é mais amplo que o ICP atual. O mercado-alvo oficial segue sendo o `ICP v1 consolidado` até que uma nova decisão formal de ICP seja registrada.
+
 ## Posicionamento (versão comercial v1 já validada)
 A JIT Manager ajuda pequenas e médias empresas que vendem pelo WhatsApp, especialmente times comerciais enxutos, a organizar leads e atendimento para vender com mais previsibilidade. Estruturamos o funil com Kanban e automações para evitar mensagens perdidas, garantir follow-up e dar visibilidade do que está acontecendo em cada etapa. Em até 14 dias, o cliente passa a responder mais rápido, manter o processo sob controle e reduzir perdas por falta de acompanhamento.
 

@@ -5,9 +5,12 @@
 Este documento é derivado e operacional. Para mensagem, ICP e oferta-base, priorize sempre o Source of Truth.
 
 ## Resumo executivo
-- ICP principal: pequenos varejos com operação comercial via WhatsApp e Instagram
+- ICP principal (v1 consolidado): pequenos varejos com operação comercial via WhatsApp e Instagram
 - Dor central: perda de conversas e falta de follow-up/padrão
 - Oferta de entrada: implantação guiada em até 14 dias
+
+## Nota de versão
+Até aqui, o repositório possui um ICP v1 consolidado. Eventual ampliação ou mudança de mercado-alvo deve ser tratada como nova decisão de ICP, e não como ajuste implícito deste documento.
 
 ## Perfil ideal de cliente (detalhe operacional)
 - 1 a 5 pessoas tocando atendimento e vendas (muitas vezes com dono(a) na operação)

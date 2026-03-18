@@ -7,14 +7,14 @@ _Início: 2026-03-13_
 - [X] Manual de marca v1
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
-- Status: Em andamento (Issue #14)
-- [ ] Definição oficial: o que é a JIT Manager
-- [ ] Definição de fronteira: o que não é a JIT Manager
-- [ ] Oferta principal inicial (produto-serviço de entrada)
-- [ ] ICP principal (segmento, porte, canal, maturidade)
-- [ ] Dores priorizadas (top 3) e ganhos esperados
-- [ ] Proposta de valor em 1 frase e pitch de 30s revisado
-- [ ] Modelo operacional inicial (entrega, suporte, acompanhamento)
+- Status: Concluída (Issue #14)
+- [X] Definição oficial: o que é a JIT Manager
+- [X] Definição de fronteira: o que não é a JIT Manager
+- [X] Oferta principal inicial (produto-serviço de entrada)
+- [X] ICP principal (segmento, porte, canal, maturidade)
+- [X] Dores priorizadas (top 3) e ganhos esperados
+- [X] Proposta de valor em 1 frase e pitch de 30s revisado
+- [X] Modelo operacional inicial (entrega, suporte, acompanhamento)
 
 ## Fase 2 — Institucional e site (1 semana)
 - [ ] Arquitetura do site institucional (seções e objetivos)

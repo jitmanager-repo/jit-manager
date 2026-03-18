@@ -6,6 +6,8 @@ Documentos-base para direcionamento empresarial da JIT Manager.
 - `source-of-truth.md`: base canônica de mensagem, ICP e oferta
 - `direcionamento.md`: definição oficial da empresa, posicionamento e fronteiras
 - `foco-principal.md`: ICP, dores, oferta principal e escopo inicial
+- `secretaria-eletronica.md`: definição do ativo, dores resolvidas e ganhos esperados
+- `modelo-operacional-v1.md`: entrega, suporte e acompanhamento padrão
 - `criterios-cnpj.md`: critérios objetivos para abrir CNPJ com base em evidências
 
 ## Como usar

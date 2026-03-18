@@ -1,6 +1,8 @@
-# Source of Truth — Mensagem, ICP e Oferta (v1)
+# Source of Truth — Mensagem, ICP e Oferta
 
 Documento canônico para posicionamento comercial e institucional da JIT Manager.
+
+> Status atual: o ICP oficial deste documento é o `ICP v1 consolidado`, derivado da Issue #2. Não existe `ICP v2` formalizado no repositório neste momento.
 
 ## 1) Mensagem institucional
 ### Tagline oficial (fixa)
@@ -13,6 +15,9 @@ A JIT Manager ajuda pequenas e médias empresas que vendem pelo WhatsApp, especi
 Organize seus leads no WhatsApp e venda com mais previsibilidade usando Kanban e automação.
 
 ## 2) ICP prioritário
+### Versão atual
+ICP v1 consolidado
+
 ### Segmento inicial
 Pequenos varejos com operação comercial no WhatsApp e Instagram.
 
@@ -45,7 +50,28 @@ Implantação guiada em até 14 dias.
 - Até 3 automações no piloto
 - Ajustes semanais por 4 semanas
 
-## 4) Campanhas por contexto (v2)
+### Ativo estrategico relacionado
+- Secretaria Eletronica: `docs/company/secretaria-eletronica.md`
+
+## 4) Dores priorizadas e ganhos esperados (fase 1)
+### Dores priorizadas
+1. Conversas se perdem e o cliente fica sem resposta
+2. Follow-up nao executado com consistencia
+3. Agendamento manual com risco de erro e conflito
+4. Cobranca desconectada do fluxo operacional
+5. Falta de criterios claros de escalonamento humano
+
+### Ganhos esperados
+1. Reducao do tempo de resposta
+2. Maior taxa de follow-up executado
+3. Menor perda de oportunidades por falha operacional
+4. Menos retrabalho e menor dependencia de memoria da equipe
+5. Mais previsibilidade do fluxo de atendimento e operacao
+
+## 5) Modelo operacional inicial
+Documento base: `docs/company/modelo-operacional-v1.md`
+
+## 6) Campanhas por contexto (v2)
 ### Operações e rotinas
 - Menos tarefa no braço. Mais negócio na cabeça.
 - Menos apagar incêndio. Mais evolução constante.
@@ -64,14 +90,14 @@ Implantação guiada em até 14 dias.
 - Menos rotina mecânica. Mais tempo pra criar.
 - Menos fricção. Mais consistência.
 
-## 5) Pitch 30s (v2)
+## 7) Pitch 30s (v2)
 A JIT Manager coloca o operacional no automático, para você voltar ao estratégico.
 Em vez de perder tempo com tarefas repetitivas, respostas no improviso e rotinas que geram erro, você ganha padrão, consistência e tranquilidade no dia a dia.
 
 Você foca no seu produto, na sua equipe e no crescimento do negócio.
 A automação cuida do resto, do jeito certo, sempre.
 
-## 6) Regra de governança
+## 8) Regra de governança
 Sempre que houver ajuste em mensagem, ICP ou oferta:
 1. Atualizar primeiro este arquivo.
 2. Depois sincronizar os arquivos derivados (site, comercial, roteiro de vendas).

@@ -3,6 +3,15 @@
 ## Objetivo
 Definir com precisão a proposta da JIT Manager, colocar o institucional no ar e validar com MVP real a viabilidade de abrir CNPJ.
 
+## Fase ativa
+0.1 Documentação e Identidade Visual (Issue #15 em andamento)
+
+Sequência imediata:
+1. Consolidar status final da 0.1 entre checklist e roadmap
+2. Validar nomenclaturas e consistência documental da identidade visual
+3. Encerrar pendências de documentação da 0.1
+4. Iniciar 0.2 com domínio, subdomínios e stack de infraestrutura
+
 ---
 
 

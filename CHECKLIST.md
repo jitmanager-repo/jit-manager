@@ -2,12 +2,15 @@
 _Início: 2026-03-13_
 
 
-## Fase 0 — Setup e Estruturação Inicial (concluída)
+## Fase 0 — Setup e Estruturação Inicial (em andamento)
+- Status: foco ativo em 0.1 (Issue #15 em andamento); 0.2 na sequência
 - 0.1 Documentação e Identidade Visual
+	- Status: Em andamento (Issue #15)
 	- [X] Setup do repositório
 	- [X] Identidade da marca (tagline, tom, fontes, paleta)
 	- [X] Manual de marca v1
 - 0.2 Infraestrutura e Integrações
+	- Status: Próxima subfase após fechamento da 0.1
 	- [ ] Registro e documentação do domínio jitmanager.com.br
 	- [ ] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres)
 	- [ ] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)

@@ -11,6 +11,12 @@ Preparar a execução da fase 0.2 com um plano claro para:
 - Operação enxuta e sem equipe de desenvolvimento dedicada.
 - Gerenciador de containers escolhido: Coolify.
 
+## Diretriz de arquitetura para a fase 0.2
+Para reduzir risco operacional neste início:
+- usar Coolify como camada de operação, com Docker/Compose como fonte de verdade;
+- evitar lock-in de interface, mantendo versionados os arquivos de infraestrutura;
+- separar subdomínios por classe de exposição (público, restrito, interno).
+
 ## Escopo inicial de subdomínios
 Sugestão base para o domínio jitmanager.com.br:
 
@@ -24,6 +30,19 @@ Sugestão base para o domínio jitmanager.com.br:
 Importante:
 - Evitar exposição pública da porta do Postgres.
 - Acesso administrativo deve ocorrer por VPN, túnel seguro ou allowlist de IP.
+
+## Decisão operacional de domínios e subdomínios (fase 0.2)
+
+| Subdomínio | Classe de exposição | Publicação inicial | Regra de acesso |
+|---|---|---|---|
+| chat.jitmanager.com.br | Público | Sim | HTTPS obrigatório e autenticação da aplicação. |
+| n8n.jitmanager.com.br | Restrito | Sim | Acesso apenas por allowlist de IP ou VPN, sem indexação pública. |
+| coolify.jitmanager.com.br | Restrito | Sim | Acesso administrativo com IP allowlist e credenciais fortes. |
+| dbadmin.jitmanager.com.br | Interno | Não expor inicialmente | Liberar somente em túnel seguro, VPN ou rede privada. |
+
+Regra de ouro:
+- serviço administrativo não deve ficar aberto de forma irrestrita na internet;
+- todo endpoint publicado deve ter TLS válido e controle de acesso ativo.
 
 ## Sequência de execução recomendada
 1. Confirmar DNS autoritativo atual do domínio.
@@ -43,6 +62,11 @@ Adotar Cloudflare se pelo menos 3 condições abaixo forem verdadeiras:
 - Necessidade de gestão DNS com alto nível de controle e auditoria.
 - Necessidade de regras de cache e performance no edge.
 - Necessidade de TLS gerenciado com políticas mais rígidas.
+
+Decisão de trabalho para início da 0.2:
+- iniciar sem Cloudflare na borda durante a validação inicial;
+- reavaliar entre 7 e 14 dias usando a matriz deste documento;
+- antecipar adoção se houver tentativa de acesso indevido recorrente, exigência de WAF ou necessidade clara de ocultar IP de origem.
 
 Não adotar Cloudflare neste momento se:
 - o ambiente ainda estiver em validação interna;
@@ -66,6 +90,14 @@ Leitura prática:
 - Etapa 1: operar com DNS funcional e SSL via stack atual no Coolify.
 - Etapa 2: após estabilidade inicial (7 a 14 dias), executar avaliação objetiva com a matriz acima.
 - Etapa 3: decidir por entrada da Cloudflare antes da abertura mais ampla do ambiente.
+
+## Checklist de execução da decisão (0.2)
+- [ ] Confirmar DNS autoritativo do domínio jitmanager.com.br.
+- [ ] Definir tipo de apontamento por subdomínio (A/AAAA ou CNAME).
+- [ ] Publicar chat.jitmanager.com.br com TLS válido.
+- [ ] Publicar n8n.jitmanager.com.br e coolify.jitmanager.com.br com restrição de acesso.
+- [ ] Manter dbadmin.jitmanager.com.br sem exposição pública.
+- [ ] Registrar resultado da matriz Cloudflare com decisão final (adotar agora ou adiar).
 
 ## Critério de pronto da preparação
 A preparação para a fase de domínios/subdomínios e Cloudflare estará pronta quando:

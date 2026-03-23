@@ -5,7 +5,21 @@ Definir com precisão a proposta da JIT Manager, colocar o institucional no ar e
 
 ---
 
-## Semana 1 — Direcionamento da empresa
+
+## Fase 0 — Setup e Estruturação Inicial
+### 0.1 Documentação e Identidade Visual
+- Setup do repositório
+- Identidade da marca (tagline, tom, fontes, paleta)
+- Manual de marca v1
+
+### 0.2 Infraestrutura e Integrações
+- Registro e documentação do domínio jitmanager.com.br
+- Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres)
+- Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)
+- Avaliação do Odoo como base de gestão e integrações
+- Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança
+
+## Fase 1 — Direcionamento da empresa
 Entregas:
 - Definição oficial da JIT Manager (posicionamento e escopo)
 - Foco principal da empresa (ICP, dores e oferta inicial)
@@ -16,7 +30,7 @@ Critério de pronto:
 
 ---
 
-## Semana 2 — Institucional e presença digital
+## Fase 2 — Institucional e presença digital
 Entregas:
 - Arquitetura do site institucional
 - Copy final de páginas principais
@@ -28,7 +42,7 @@ Critério de pronto:
 
 ---
 
-## Semanas 3 e 4 — MVP de validação
+## Fase 3 — MVP de validação
 Entregas:
 - Escopo de MVP fechado (mínimo viável, sem excesso de features)
 - Piloto com 1 a 3 clientes-alvo

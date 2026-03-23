@@ -12,10 +12,10 @@ _Início: 2026-03-13_
 - 0.2 Infraestrutura e Integrações
 	- Status: Próxima subfase após fechamento da 0.1
 	- [ ] Registro e documentação do domínio jitmanager.com.br
-	- [ ] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres)
-	- [ ] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)
+	- [ ] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres) com plano de execução em docs/infra/plano-dominios-subdominios-cloudflare.md
+	- [X] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel) - decisão: Coolify, por menor custo operacional e maior velocidade no cenário atual (base: docs/infra/avaliacao-gerenciador-containers.md)
 	- [ ] Avaliação do Odoo como base de gestão e integrações
-	- [ ] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança
+	- [ ] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança (critérios e checklist em docs/infra/plano-dominios-subdominios-cloudflare.md)
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
 - Status: Concluída (Issue #14)

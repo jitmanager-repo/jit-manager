@@ -1,10 +1,18 @@
 # JIT Manager — Checklist mestre
 _Início: 2026-03-13_
 
-## Fase 0 — Base inicial (concluída)
-- [X] Setup do repositório
-- [X] Identidade da marca (tagline, tom, fontes, paleta)
-- [X] Manual de marca v1
+
+## Fase 0 — Setup e Estruturação Inicial (concluída)
+- 0.1 Documentação e Identidade Visual
+	- [X] Setup do repositório
+	- [X] Identidade da marca (tagline, tom, fontes, paleta)
+	- [X] Manual de marca v1
+- 0.2 Infraestrutura e Integrações
+	- [ ] Registro e documentação do domínio jitmanager.com.br
+	- [ ] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres)
+	- [ ] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)
+	- [ ] Avaliação do Odoo como base de gestão e integrações
+	- [ ] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
 - Status: Concluída (Issue #14)

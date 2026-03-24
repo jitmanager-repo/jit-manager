@@ -14,6 +14,10 @@ Transformar a base de marca já criada em uma operação validável:
 - Roadmap executivo: `docs/roadmap.md`
 - Direcionamento estratégico: `docs/company/`
 - Marca e identidade: `docs/brand/`
+- Infraestrutura e integrações: `docs/infra/`
+	- Decisão de containers: `docs/infra/avaliacao-gerenciador-containers.md`
+	- Domínios e Cloudflare: `docs/infra/plano-dominios-subdominios-cloudflare.md`
+	- Base de decisão Odoo: `docs/infra/integracao-jitmanager-odoo.md`
 - Conteúdo institucional/site: `docs/site/`
 - Base legal inicial: `docs/legal/`
 

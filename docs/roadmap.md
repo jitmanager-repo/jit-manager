@@ -26,7 +26,7 @@ Sequência imediata:
 - Registro e documentação do domínio jitmanager.com.br
 - Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres) com plano de execução em docs/infra/plano-dominios-subdominios-cloudflare.md
 - Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)
-- Avaliação do Odoo como base de gestão e integrações
+- Avaliação do Odoo como base de gestão e integrações (base de decisão: docs/infra/integracao-jitmanager-odoo.md)
 - Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança com critérios de decisão em docs/infra/plano-dominios-subdominios-cloudflare.md
 
 ## Fase 1 — Direcionamento da empresa

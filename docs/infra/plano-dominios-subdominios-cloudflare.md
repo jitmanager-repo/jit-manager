@@ -110,6 +110,7 @@ Validação complementar de e-mail (concluída em 2026-03-24):
 
 Higiene de segurança aplicada:
 - certificado de origem anterior revogado e novo certificado emitido;
+- par certificado/chave validado por comparação de chave pública (hash SHA-256 idêntico);
 - manter rotação de certificado de origem quando houver exposição acidental de chave.
 
 ## Checklist de execução da decisão (0.2)

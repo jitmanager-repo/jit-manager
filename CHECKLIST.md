@@ -11,7 +11,7 @@ _Início: 2026-03-13_
 	- [X] Manual de marca v1
 - 0.2 Infraestrutura e Integrações
 	- Status: Planejamento operacional documentado e pronto para execução
-	- [X] Registro e documentação do domínio jitmanager.com.br (Hostinger, expira 2026-07-22, DNS atualmente estacionado; detalhes em docs/infra/dominio-jitmanager.md)
+	- [X] Registro e documentação do domínio jitmanager.com.br (Hostinger, expira 2026-07-22, DNS autoritativo ativo na Cloudflare; detalhes em docs/infra/dominio-jitmanager.md)
 	- [X] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres) com decisão operacional e checklist de execução em docs/infra/plano-dominios-subdominios-cloudflare.md
 	- [X] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel) - decisão: Coolify, por menor custo operacional e maior velocidade no cenário atual (base: docs/infra/avaliacao-gerenciador-containers.md)
 	- [ ] Avaliação do Odoo como base de gestão e integrações

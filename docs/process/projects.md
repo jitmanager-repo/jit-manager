@@ -19,7 +19,7 @@ O workflow `.github/workflows/sync-issue-status-in-project.yml` sincroniza o sta
 ## Configuração obrigatória
 ### 1) Repository Secret (URL do Project)
 Criar em `Settings > Secrets and variables > Actions > Secrets`:
-- `GH_PROJECT_URL` = URL do Projects (ex.: `https://github.com/orgs/<org>/projects/<id>`)
+- `GH_PROJECT_URL` = URL do Projects no padrão de usuário (ex.: `https://github.com/users/<usuario>/projects/<id>`)
 
 ### 2) Repository Secret (token)
 Criar em `Settings > Secrets and variables > Actions > Secrets`:
@@ -35,6 +35,10 @@ Criar em `Settings > Secrets and variables > Actions > Secrets`:
 3. Verificar se a issue entrou no Projects.
 4. Atribuir a issue para alguém e verificar se foi para `Em andamento`.
 5. Fechar a issue e verificar se foi para `Concluído`.
+
+## Exemplo prático (padrão atual)
+- `GH_PROJECT_URL`: `https://github.com/users/jitmanager-repo/projects/1`
+- `ADD_TO_PROJECT_PAT`: token com escopos `repo` e `project`
 
 ## Regra operacional
 Sem os dois secrets configurados, a automação não funciona.

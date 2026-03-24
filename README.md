@@ -19,6 +19,7 @@ Transformar a base de marca já criada em uma operação validável:
 	- Domínios e Cloudflare: `docs/infra/plano-dominios-subdominios-cloudflare.md`
 	- Base de decisão Odoo: `docs/infra/integracao-jitmanager-odoo.md`
 	- **Arquitetura de separação de serviços em múltiplas VPS:** `docs/infra/arquitetura-separacao-vps.md` (recomendações práticas para expansão, escalabilidade e checklist de implementação)
+	- **Arquitetura evolutiva multi-tenancy e isolamento por cliente:** `docs/infra/arquitetura-evolutiva-multitenancy.md` (modelo prático para SaaS, onboarding e crescimento seguro)
 - Conteúdo institucional/site: `docs/site/`
 - Base legal inicial: `docs/legal/`
 

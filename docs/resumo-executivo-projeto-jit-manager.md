@@ -8,12 +8,14 @@ Este repositório concentra a documentação de direção da empresa, identidade
 ## 2) Objetivo do projeto
 Consolidar posicionamento, preparar presença institucional e validar um MVP com evidências de demanda, operação e viabilidade econômica, para apoiar decisões empresariais (incluindo o momento correto de formalização e expansão).
 
-## 3) Escopo atual
 - Direcionamento estratégico da empresa.
 - Estrutura de marca e documentação de identidade.
 - Planejamento e decisões de infraestrutura inicial.
 - Planejamento de site institucional e governança documental.
 - Preparação de ciclo de validação de MVP.
+- **Arquitetura de separação de serviços em múltiplas VPS** (docs/infra/arquitetura-separacao-vps.md)
+- **Arquitetura evolutiva multi-tenancy e isolamento por cliente** (docs/infra/arquitetura-evolutiva-multitenancy.md)
+ - **Setup operacional Mark 0: preparação da VPS** (docs/setup/mark-0.md)
 
 ## 4) Status executivo por fase
 
@@ -46,6 +48,8 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 - Segurança de borda e DNS: Cloudflare adotada como camada ativa.
 - E-mail corporativo: autenticações essenciais validadas (SPF, DKIM, DMARC).
 - Governança: decisões e evidências mantidas no repositório para rastreabilidade.
+- **Critérios Go/No-Go para separação de VPS** formalizados para decisões rápidas de expansão.
+- **Modelo prático de multi-tenancy** documentado para onboarding seguro e escalável de clientes.
 
 ## 6) Riscos controlados e mitigação
 - Exposição indevida de dados sensíveis: política de não compartilhamento e rotação de credenciais/certificados quando necessário.
@@ -60,14 +64,32 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 - Publicar subdomínios administrativos com restrição de acesso.
 - Garantir que subdomínio administrativo de banco permaneça sem exposição pública.
 - Avançar avaliação do Odoo para escopo de gestão e integrações, usando como base `docs/infra/integracao-jitmanager-odoo.md`.
+- **Revisar e aplicar arquitetura de separação de VPS conforme critérios Go/No-Go.**
+- **Estruturar diretórios e projetos no Coolify conforme modelo multi-tenancy.**
+- **Automatizar script de onboarding de cliente (criação de projeto, banco, rede e subdomínio).**
+- **Documentar e validar estratégia de backup por cliente e core.**
 
 ### Médio prazo (2 a 4 semanas)
 - Finalizar arquitetura e copy do site institucional.
 - Publicar presença institucional mínima com páginas legais e analytics.
 - Fechar escopo do MVP e preparar piloto com clientes.
+- **Monitorar recursos e planejar expansão horizontal conforme crescimento.**
 
 ### Marco de decisão
 - A evolução para a próxima fase deve ocorrer com evidências mínimas documentadas, mantendo o critério de avanço já definido no projeto.
+## 10) Sugestões para início do setup
+
+- Seguir checklist e scripts do Mark 0 (docs/setup/mark-0.md) para preparar a VPS
+- Registrar toda execução e decisões em docs/setup/mark-0-execution-log.md
+- Validar acesso e configuração do Coolify na VPS principal
+- Criar estrutura de diretórios Projects/ conforme modelo sugerido
+- Garantir template docker-compose reutilizável para clientes
+- Definir padrão de subdomínio para clientes (ex: {cnpj}.jitmanager.com.br)
+- Implementar script inicial de onboarding de cliente
+- Documentar política de backup e retenção diferenciada
+- Validar isolamento de rede Docker por cliente
+- Garantir checklist de segurança mínima (TLS, firewall, segredos)
+- Registrar decisões e evidências em cada etapa
 
 ## 8) Critério de sucesso do ciclo atual
 Considera-se o ciclo atual bem-sucedido quando:

@@ -41,6 +41,17 @@ Este é o repositório de **documentação estratégica**. Os repositórios oper
 
 > Neste repositório **não devem constar** IPs, credenciais, segredos ou configurações operacionais de produção.
 
+## Fonte canônica operacional
+
+Após o desmembramento em múltiplos repositórios:
+
+- O `jit-manager` é a fonte canônica de estratégia, governança e decisões.
+- O `jit-infra` é a fonte canônica de setup operacional de VPS, Docker e Coolify.
+- O `jit-scripts` é a fonte canônica de automações operacionais.
+- O `client-template` é a fonte canônica de templates base por cliente.
+
+Em especial, os documentos de setup Mark 0 devem ser mantidos somente no `jit-infra` em `setup/mark-0.md` e `setup/mark-0-execution-log.md`.
+
 ## Fluxo de Issues
 - Toda issue deve entrar automaticamente no Projects oficial do repositório.
 - Toda issue em execução deve estar na coluna `Em andamento` do board `JIT Manager - Roadmap`.

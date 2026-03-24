@@ -1,23 +1,14 @@
-# Execução Setup Mark 0 - VPS
+# Log de Execução Mark 0 (Referência)
 
-## Data: YYYY-MM-DD HH:MM
+Este documento foi mantido apenas para referência no repositório de governança.
 
-## Estado Inicial da VPS
-- Sistema: [Ubuntu 22.04 LTS]
-- CPU: [8 vCPU]
-- RAM: [24GB]
-- Disco: [200GB NVMe]
+## Fonte canônica atual
 
-## Comandos Executados
-```bash
-# Comandos e outputs
-```
+O template e os registros de execução do Mark 0 devem existir somente no repositório privado `jit-infra`:
 
-## Problemas Encontrados
-- [Nenhum/Lista de problemas]
+- `setup/mark-0-execution-log.md`
 
-## Configurações Aplicadas
-- [Lista de configurações]
+## Regra de manutenção
 
-## Próximos Passos
-- [Lista de próximos passos]
+- Não registrar execução operacional neste repositório.
+- Toda atualização do log deve ser feita no `jit-infra`.

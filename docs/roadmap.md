@@ -21,6 +21,7 @@ Sequência imediata:
 - Identidade da marca (tagline, tom, fontes, paleta)
 - Manual de marca v1
 
+
 ### 0.2 Infraestrutura e Integrações
 - Decisão de gerenciador de containers: Coolify (documentado em docs/infra/avaliacao-gerenciador-containers.md)
 - Registro e documentação do domínio jitmanager.com.br
@@ -28,6 +29,10 @@ Sequência imediata:
 - Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel)
 - Avaliação do Odoo como base de gestão e integrações (base de decisão: docs/infra/integracao-jitmanager-odoo.md)
 - Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança com critérios de decisão em docs/infra/plano-dominios-subdominios-cloudflare.md
+- **Definição e evolução da arquitetura de separação de serviços em múltiplas VPS** (documento: docs/infra/arquitetura-separacao-vps.md)
+	- Recomendações práticas para cada fase (MVP, Validação, Escala)
+	- Critérios para separação, benefícios e checklist de implementação
+	- Referenciar sempre que houver decisão de expansão ou mudança de infraestrutura
 
 ## Fase 1 — Direcionamento da empresa
 Entregas:
@@ -40,6 +45,7 @@ Critério de pronto:
 
 ---
 
+
 ## Fase 2 — Institucional e presença digital
 Entregas:
 - Arquitetura do site institucional
@@ -49,6 +55,19 @@ Entregas:
 
 Critério de pronto:
 - Visitante entende a proposta, confia na operação e executa um CTA rastreável.
+
+---
+
+## Fase 2.1 — Infraestrutura: Separação e Escalabilidade
+Entregas:
+- Aplicação das recomendações do documento de arquitetura de separação de VPS (docs/infra/arquitetura-separacao-vps.md)
+- Monitoramento de recursos e planejamento de expansão
+- Provisionamento de VPS dedicada para IA/LLM e banco de dados conforme critérios
+- Documentação de dependências e fluxos cross-VPS
+
+Critério de pronto:
+- Infraestrutura preparada para escalar sem comprometer operações críticas
+- Documentação e checklist de separação revisados
 
 ---
 

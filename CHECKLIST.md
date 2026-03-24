@@ -2,6 +2,7 @@
 _Início: 2026-03-13_
 
 
+
 ## Fase 0 — Setup e Estruturação Inicial (em andamento)
 - Status: foco ativo em 0.1 (Issue #15 em andamento); 0.2 na sequência
 - 0.1 Documentação e Identidade Visual
@@ -16,6 +17,9 @@ _Início: 2026-03-13_
 	- [X] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel) - decisão: Coolify, por menor custo operacional e maior velocidade no cenário atual (base: docs/infra/avaliacao-gerenciador-containers.md)
 	- [ ] Avaliação do Odoo como base de gestão e integrações (base de decisão: docs/infra/integracao-jitmanager-odoo.md)
 	- [X] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança (decisão: adotar agora; modo SSL/TLS Completo (estrito); evidências em docs/infra/plano-dominios-subdominios-cloudflare.md)
+	- [ ] **Implementação da arquitetura de separação de serviços em múltiplas VPS** (ver docs/infra/arquitetura-separacao-vps.md)
+		- Checklist de implementação e recomendações práticas por fase
+		- Revisar critérios de separação e benefícios antes de expandir infraestrutura
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
 - Status: Concluída (Issue #14)

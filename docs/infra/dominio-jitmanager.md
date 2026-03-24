@@ -14,16 +14,17 @@
 
 | Nameserver | Situação |
 |---|---|
-| ns1.dns-parking.com | Estacionado (sem apontamento ativo) |
-| ns2.dns-parking.com | Estacionado (sem apontamento ativo) |
+| elmo.ns.cloudflare.com | Ativo (Cloudflare DNS) |
+| paloma.ns.cloudflare.com | Ativo (Cloudflare DNS) |
 
-> **Atenção:** o domínio está atualmente em DNS parking. Nenhum subdomínio ou serviço está acessível publicamente até que os nameservers sejam migrados para um provedor operacional.
+> Estado atualizado: nameservers já migrados para Cloudflare e resolução pública ativa.
 
 ## Próxima ação necessária (fase 0.2)
 
-Migrar os nameservers para o provedor DNS escolhido antes de criar os subdomínios operacionais. Opções previstas:
+Validar conclusão operacional da configuração DNS/TLS e manter monitoramento dos subdomínios de serviço:
 
-- **Cloudflare** — caso a adoção seja confirmada pela matriz em docs/infra/plano-dominios-subdominios-cloudflare.md;
-- **DNS nativo da Hostinger** — caso Cloudflare seja adiado; configuração direta no painel do registrador.
+- manter SSL/TLS do Cloudflare em modo Completo (estrito);
+- manter certificado de origem válido para `jitmanager.com.br` e `*.jitmanager.com.br`;
+- seguir checklist de exposição segura em `docs/infra/plano-dominios-subdominios-cloudflare.md`.
 
 Referência de execução: docs/infra/plano-dominios-subdominios-cloudflare.md

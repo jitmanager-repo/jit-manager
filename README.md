@@ -29,6 +29,18 @@ Transformar a base de marca já criada em uma operação validável:
 - Priorizar ganhos operacionais mensuráveis
 - Registrar decisões no repositório para evitar retrabalho
 
+## Estrutura multi-repositório
+
+Este é o repositório de **documentação estratégica**. Os repositórios operacionais (privados) são:
+
+| Repositório | Finalidade |
+|---|---|
+| [jit-infra](https://github.com/jitmanager-repo/jit-infra) | Scripts de setup VPS, configurações Docker/Coolify, templates por serviço |
+| [jit-scripts](https://github.com/jitmanager-repo/jit-scripts) | Scripts de automação, onboarding de clientes, backup e manutenção |
+| [client-template](https://github.com/jitmanager-repo/client-template) | Template base docker-compose para ambientes isolados por cliente |
+
+> Neste repositório **não devem constar** IPs, credenciais, segredos ou configurações operacionais de produção.
+
 ## Fluxo de Issues
 - Toda issue deve entrar automaticamente no Projects oficial do repositório.
 - Toda issue em execução deve estar na coluna `Em andamento` do board `JIT Manager - Roadmap`.

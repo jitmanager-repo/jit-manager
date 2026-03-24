@@ -15,7 +15,7 @@ _Início: 2026-03-13_
 	- [X] Planejamento de hospedagem e subdomínios (Chatwoot, N8N, Postgres) com decisão operacional e checklist de execução em docs/infra/plano-dominios-subdominios-cloudflare.md
 	- [X] Avaliação e escolha do gerenciador de containers (Coolify, Docker, Easypanel) - decisão: Coolify, por menor custo operacional e maior velocidade no cenário atual (base: docs/infra/avaliacao-gerenciador-containers.md)
 	- [ ] Avaliação do Odoo como base de gestão e integrações
-	- [ ] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança (matriz e critérios definidos; decisão final pendente em docs/infra/plano-dominios-subdominios-cloudflare.md)
+	- [X] Avaliação da Cloudflare para gestão de domínios/subdomínios e segurança (decisão: adotar agora; modo SSL/TLS Completo (estrito); evidências em docs/infra/plano-dominios-subdominios-cloudflare.md)
 
 ## Fase 1 — Direcionamento da empresa (1 semana)
 - Status: Concluída (Issue #14)

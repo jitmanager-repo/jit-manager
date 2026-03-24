@@ -101,7 +101,16 @@ Evidências registradas:
 - respostas externas com `Server: cloudflare` para raiz, `www` e subdomínio de teste.
 
 Pendência operacional fora da decisão de borda:
-- validar envio real de e-mail com confirmação de `Received-SPF: pass` e presença de `DKIM-Signature` no cabeçalho.
+- nenhuma pendência crítica de borda.
+
+Validação complementar de e-mail (concluída em 2026-03-24):
+- `spf=pass` e `Received-SPF: pass` para `dev@jitmanager.com.br`;
+- `dkim=pass` com seletor `hostingermail-a`;
+- `dmarc=pass` com política `p=none`.
+
+Higiene de segurança aplicada:
+- certificado de origem anterior revogado e novo certificado emitido;
+- manter rotação de certificado de origem quando houver exposição acidental de chave.
 
 ## Checklist de execução da decisão (0.2)
 - [X] Confirmar DNS autoritativo do domínio jitmanager.com.br.

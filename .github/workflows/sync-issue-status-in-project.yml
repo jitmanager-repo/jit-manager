@@ -35,15 +35,14 @@ jobs:
               return;
             }
 
-            const parsed = projectUrl.match(/^https:\/\/github\.com\/(users|orgs)\/([^\/]+)\/projects\/(\d+)/i);
+            const parsed = projectUrl.match(/^https:\/\/github\.com\/users\/([^\/]+)\/projects\/(\d+)/i);
             if (!parsed) {
-              core.setFailed('GH_PROJECT_URL must be like https://github.com/users/<owner>/projects/<number> or https://github.com/orgs/<owner>/projects/<number>.');
+              core.setFailed('GH_PROJECT_URL must be like https://github.com/users/<owner>/projects/<number>.');
               return;
             }
 
-            const ownerType = parsed[1].toLowerCase();
-            const owner = parsed[2];
-            const projectNumber = Number(parsed[3]);
+            const owner = parsed[1];
+            const projectNumber = Number(parsed[2]);
 
             const normalize = (s) => (s || '')
               .normalize('NFD')
@@ -76,37 +75,8 @@ jobs:
               }
             `;
 
-            const projectQueryOrg = `
-              query($owner: String!, $number: Int!) {
-                organization(login: $owner) {
-                  projectV2(number: $number) {
-                    id
-                    title
-                    fields(first: 50) {
-                      nodes {
-                        ... on ProjectV2SingleSelectField {
-                          id
-                          name
-                          options {
-                            id
-                            name
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            `;
-
-            let project;
-            if (ownerType === 'users') {
-              const data = await github.graphql(projectQueryUser, { owner, number: projectNumber });
-              project = data?.user?.projectV2;
-            } else {
-              const data = await github.graphql(projectQueryOrg, { owner, number: projectNumber });
-              project = data?.organization?.projectV2;
-            }
+            const data = await github.graphql(projectQueryUser, { owner, number: projectNumber });
+            const project = data?.user?.projectV2;
 
             if (!project) {
               core.setFailed(`Project not found for URL: ${projectUrl}`);

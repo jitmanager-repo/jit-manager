@@ -91,13 +91,25 @@ Leitura prática:
 - Etapa 2: após estabilidade inicial (7 a 14 dias), executar avaliação objetiva com a matriz acima.
 - Etapa 3: decidir por entrada da Cloudflare antes da abertura mais ampla do ambiente.
 
+## Resultado da decisão (2026-03-24)
+Decisão final: adotar Cloudflare agora.
+
+Evidências registradas:
+- nameservers ativos em Cloudflare (`elmo.ns.cloudflare.com` e `paloma.ns.cloudflare.com`);
+- modo SSL/TLS configurado em Completo (estrito);
+- certificado de origem Cloudflare válido para `jitmanager.com.br` e `*.jitmanager.com.br`;
+- respostas externas com `Server: cloudflare` para raiz, `www` e subdomínio de teste.
+
+Pendência operacional fora da decisão de borda:
+- validar envio real de e-mail com confirmação de `Received-SPF: pass` e presença de `DKIM-Signature` no cabeçalho.
+
 ## Checklist de execução da decisão (0.2)
-- [ ] Confirmar DNS autoritativo do domínio jitmanager.com.br.
+- [X] Confirmar DNS autoritativo do domínio jitmanager.com.br.
 - [ ] Definir tipo de apontamento por subdomínio (A/AAAA ou CNAME).
 - [ ] Publicar chat.jitmanager.com.br com TLS válido.
 - [ ] Publicar n8n.jitmanager.com.br e coolify.jitmanager.com.br com restrição de acesso.
 - [ ] Manter dbadmin.jitmanager.com.br sem exposição pública.
-- [ ] Registrar resultado da matriz Cloudflare com decisão final (adotar agora ou adiar).
+- [X] Registrar resultado da matriz Cloudflare com decisão final (adotar agora ou adiar).
 
 ## Critério de pronto da preparação
 A preparação para a fase de domínios/subdomínios e Cloudflare estará pronta quando:

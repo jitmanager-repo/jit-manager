@@ -41,17 +41,6 @@ Este é o repositório de **documentação estratégica**. Os repositórios oper
 
 > Neste repositório **não devem constar** IPs, credenciais, segredos ou configurações operacionais de produção.
 
-## Fonte canônica operacional
-
-Após o desmembramento em múltiplos repositórios:
-
-- O `jit-manager` é a fonte canônica de estratégia, governança e decisões.
-- O `jit-infra` é a fonte canônica de setup operacional de VPS, Docker e Coolify.
-- O `jit-scripts` é a fonte canônica de automações operacionais.
-- O `client-template` é a fonte canônica de templates base por cliente.
-
-Em especial, os documentos de setup Mark 0 devem ser mantidos somente no `jit-infra` em `setup/mark-0.md` e `setup/mark-0-execution-log.md`.
-
 ## Fluxo de Issues
 - Toda issue deve entrar automaticamente no Projects oficial do repositório.
 - Toda issue em execução deve estar na coluna `Em andamento` do board `JIT Manager - Roadmap`.
@@ -65,3 +54,21 @@ Em especial, os documentos de setup Mark 0 devem ser mantidos somente no `jit-in
 
 ## Decisão de CNPJ
 A abertura de CNPJ é tratada como marco de decisão de negócio, não como etapa inicial. A decisão será baseada em evidências da Fase 3 (interesse, conversão, operação mínima e previsibilidade de receita).
+
+# Arquivos migrados para outros repositórios
+
+Os arquivos abaixo foram movidos para seus respectivos repositórios. Consulte os repositórios indicados para acessar o conteúdo atualizado.
+
+## Arquivos migrados para `jit-infra`
+- `docs/setup/mark-0.md`
+- `docs/setup/mark-0-execution-log.md`
+
+## Arquivos migrados para `jit-scripts`
+- Scripts de automação e manutenção (detalhes nos changelogs e decisões).
+
+## Arquivos migrados para `client-template`
+- Templates Docker Compose para ambientes isolados por cliente.
+
+---
+
+Para mais informações, consulte o plano de migração em `docs/migration-plan.md`.

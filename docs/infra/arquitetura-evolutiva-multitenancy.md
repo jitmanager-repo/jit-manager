@@ -96,6 +96,12 @@ volumes:
   acme-postgres-data:
 ```
 
+### Usuários Sugeridos para Multi-Tenancy
+- `client-{nome}`: Usuário isolado para cada cliente, com permissões restritas ao ambiente do cliente.
+- `admin-core`: Usuário administrativo para gerenciar serviços centrais (Coolify, Odoo, etc.).
+
+Esses usuários devem ser configurados com redes e volumes Docker isolados para cada cliente.
+
 ---
 
 ## Plano de Crescimento

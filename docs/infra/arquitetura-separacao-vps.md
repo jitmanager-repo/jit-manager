@@ -178,4 +178,12 @@ VPS 4 - AUXILIAR (Low-cost provider)
 5. Implemente health checks para failover automático
 6. Mantenha secrets management centralizado (Vault ou Coolify secrets)
 
+### Usuários Recomendados por VPS
+- **VPS Principal**: `admin-core`, `monitor-core`
+- **VPS Secundária (IA/LLM)**: `ai-admin`, `ai-monitor`
+- **VPS Banco de Dados**: `db-admin`, `db-backup`
+- **VPS Auxiliar**: `aux-admin`, `aux-monitor`
+
+Cada usuário deve ser configurado com chaves SSH exclusivas e permissões mínimas necessárias.
+
 Esta abordagem permite crescimento orgânico da infraestrutura conforme as necessidades do JIT Manager evoluem, sem comprometer a estabilidade operacional.

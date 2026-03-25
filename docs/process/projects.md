@@ -77,6 +77,7 @@ Adicionar ao GitHub Projects um campo de fase, separado do campo `Status`.
 4. Fechar ou reescrever issues defasadas antes de iniciar um novo Mark.
 5. Seguir o checklist operacional em `docs/process/project-phase-review-checklist.md`.
 6. Usar `maintenance/sync-project-phase.ps1` primeiro em `dry-run` e depois com `-Apply` quando a revisao estiver validada.
+7. Executar a rotina por frequencia em `docs/process/project-operations-checklist.md`.
 
 ### Limite atual da automacao
 Os workflows atuais sincronizam entrada no Project e ciclo basico de `Status`, mas nao inferem a fase real do projeto. A aderencia por fase continua sendo uma responsabilidade de governanca operacional.

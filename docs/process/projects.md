@@ -29,6 +29,10 @@ Criar em `Settings > Secrets and variables > Actions > Secrets`:
 - `project`
 - `repo` (ou equivalente mínimo para issues no contexto do repositório)
 
+## Pre-requisito para operacao local com gh
+- Para consultar o board via `gh api graphql`, o token local precisa de `read:project`.
+- Para aplicar mudancas no board via script, o token local precisa de `project`.
+
 ## Validação rápida
 1. Criar uma issue de teste.
 2. Conferir a aba Actions para ver execução do workflow.
@@ -46,6 +50,7 @@ Sem os dois secrets configurados, a automação não funciona.
 ## Auditoria atual
 - Os workflows de Projects existem em `jit-manager`, `jit-infra` e `jit-scripts`.
 - O script de validacao operacional existe em `jit-scripts/maintenance/test-project-workflows.ps1`.
+- O script operador do board por fase existe em `jit-scripts/maintenance/sync-project-phase.ps1`.
 - A validacao automatizada precisa cobrir sempre os tres repositorios principais do projeto.
 
 ## Regra complementar de governanca por fase
@@ -71,6 +76,7 @@ Adicionar ao GitHub Projects um campo de fase, separado do campo `Status`.
 3. Atualizar campo `Fase` no board oficial.
 4. Fechar ou reescrever issues defasadas antes de iniciar um novo Mark.
 5. Seguir o checklist operacional em `docs/process/project-phase-review-checklist.md`.
+6. Usar `maintenance/sync-project-phase.ps1` primeiro em `dry-run` e depois com `-Apply` quando a revisao estiver validada.
 
 ### Limite atual da automacao
 Os workflows atuais sincronizam entrada no Project e ciclo basico de `Status`, mas nao inferem a fase real do projeto. A aderencia por fase continua sendo uma responsabilidade de governanca operacional.

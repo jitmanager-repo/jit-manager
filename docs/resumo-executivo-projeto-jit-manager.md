@@ -1,27 +1,35 @@
 # Resumo Executivo do Projeto — JIT Manager
 
 ## 1) Visão geral
-A JIT Manager é uma iniciativa em fase de estruturação para validar uma operação de serviços com base em processos, tecnologia e foco comercial bem definido. O projeto prioriza clareza estratégica, execução enxuta e validação real com mercado antes de escalar investimento.
+A JIT Manager evoluiu de uma iniciativa em estruturação para uma operação com base estratégica consolidada, infraestrutura inicial validada e trilha operacional organizada por fases executáveis.
 
-Este repositório concentra a documentação de direção da empresa, identidade de marca, plano de infraestrutura, conteúdo institucional e critérios de viabilidade do MVP.
+Hoje, o projeto opera em modelo multi-repositório:
+- `jit-manager`: direção estratégica, governança, marca e documentação executiva
+- `jit-infra`: setup de VPS, Coolify, checklists por Mark e logs de execução
+- `jit-scripts`: automações operacionais, sincronização de board/issues e rotinas de manutenção
+- `client-template`: base futura para ambientes isolados por cliente
+
+O foco atual não é mais apenas planejar a infraestrutura, mas transformar a base já implantada em uma operação repetível, segura e pronta para onboarding.
 
 ## 2) Objetivo do projeto
-Consolidar posicionamento, preparar presença institucional e validar um MVP com evidências de demanda, operação e viabilidade econômica, para apoiar decisões empresariais (incluindo o momento correto de formalização e expansão).
+Consolidar posicionamento, operar uma infraestrutura validada e preparar uma base de execução para onboarding de clientes, institucional e MVP com evidências reais de demanda, operação e viabilidade econômica.
 
+## 3) Escopo consolidado até agora
 - Direcionamento estratégico da empresa.
 - Estrutura de marca e documentação de identidade.
-- Planejamento e decisões de infraestrutura inicial.
+- Planejamento, decisões e execução da infraestrutura inicial.
 - Planejamento de site institucional e governança documental.
-- Preparação de ciclo de validação de MVP.
+- Preparação de ciclo de validação de MVP e operacionalização do ambiente base.
 - **Arquitetura de separação de serviços em múltiplas VPS** (docs/infra/arquitetura-separacao-vps.md)
 - **Arquitetura evolutiva multi-tenancy e isolamento por cliente** (docs/infra/arquitetura-evolutiva-multitenancy.md)
- - **Setup operacional Mark 0: preparação da VPS** (docs/setup/mark-0.md)
+- **Governança de board, issues e sincronização automática de fase/status**
+- **Setup operacional por Marks no repositório `jit-infra`**
 
 ## 4) Status executivo por fase
 
-### Fase 0 — Setup e Estruturação Inicial (em andamento)
-- 0.1 Documentação e Identidade Visual: principal estrutura concluída, com consolidação documental em andamento.
-- 0.2 Infraestrutura e Integrações: decisões críticas já registradas.
+### Fase 0 — Setup e Estruturação Inicial (em andamento, com blocos concluídos)
+- 0.1 Documentação e Identidade Visual: estrutura principal concluída.
+- 0.2 Infraestrutura e Integrações: base operacional implantada e já em execução por Marks.
 
 Principais avanços da 0.2:
 - Domínio registrado e documentado.
@@ -32,12 +40,15 @@ Principais avanços da 0.2:
 - Validação de TLS de borda e origem concluída.
 - Validação de e-mail concluída (SPF, DKIM e DMARC).
 - Rotação de certificado de origem já executada como medida de higiene de segurança.
+- **Mark 0 concluído**: VPS endurecida, Docker operacional, SSH seguro, snapshot de baseline criado.
+- **Mark 1 concluído**: Coolify operacional em `coolify.jitmanager.com.br`, backup validado, notificações por Telegram funcionando, snapshot `Mark-1-Final` criado.
+- **Mark 2 iniciado**: estrutura de projetos, template base e padrão de subdomínios formalizados como próxima frente operacional.
 
 ### Fase 1 — Direcionamento da empresa (concluída)
 Entregas de posicionamento, foco inicial, proposta de valor e modelo operacional estão concluídas e registradas.
 
 ### Fase 2 — Institucional e site (pendente)
-Definição de arquitetura do site, copy final, páginas legais, publicação e analytics ainda pendentes.
+Definição de arquitetura do site, copy final, páginas legais, publicação e analytics seguem pendentes, mas agora dependem de uma base operacional mais madura já parcialmente resolvida.
 
 ### Fase 3 — MVP de validação (pendente)
 Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda pendentes.
@@ -50,52 +61,59 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 - Governança: decisões e evidências mantidas no repositório para rastreabilidade.
 - **Critérios Go/No-Go para separação de VPS** formalizados para decisões rápidas de expansão.
 - **Modelo prático de multi-tenancy** documentado para onboarding seguro e escalável de clientes.
+- **Coolify adotado e validado em produção inicial** como plano de operação central.
+- **Governança de board e issues automatizada** com sincronização de `Status`, `Fase`, `Repositorio` e atualização de issues estratégicas.
 
 ## 6) Riscos controlados e mitigação
 - Exposição indevida de dados sensíveis: política de não compartilhamento e rotação de credenciais/certificados quando necessário.
 - Complexidade operacional precoce: adoção de stack enxuta e checklist de execução por etapas.
 - Divergência documental: atualização centralizada em checklist, roadmap e documentos de infraestrutura.
+- Desalinhamento entre board e realidade operacional: mitigado com rotinas automáticas e checklists por frequência.
 
 ## 7) Próximos passos propostos
 
 ### Curto prazo (1 a 2 semanas)
-- Definir tipo de apontamento DNS por subdomínio (A/AAAA ou CNAME).
-- Publicar subdomínio público principal com TLS ativo.
-- Publicar subdomínios administrativos com restrição de acesso.
-- Garantir que subdomínio administrativo de banco permaneça sem exposição pública.
+- Executar o **Mark 2** no `jit-infra`:
+	- criar estrutura de projetos no Coolify
+	- definir template base docker-compose
+	- formalizar padrão de subdomínios
+	- criar projeto core de serviços
+- Fechar pendências de publicação dos subdomínios de serviço com a nova estrutura.
 - Avançar avaliação do Odoo para escopo de gestão e integrações, usando como base `docs/infra/integracao-jitmanager-odoo.md`.
-- **Revisar e aplicar arquitetura de separação de VPS conforme critérios Go/No-Go.**
-- **Estruturar diretórios e projetos no Coolify conforme modelo multi-tenancy.**
-- **Automatizar script de onboarding de cliente (criação de projeto, banco, rede e subdomínio).**
-- **Documentar e validar estratégia de backup por cliente e core.**
+- Preparar a base para o **Mark 3** (automação de onboarding e integração).
 
 ### Médio prazo (2 a 4 semanas)
 - Finalizar arquitetura e copy do site institucional.
 - Publicar presença institucional mínima com páginas legais e analytics.
 - Fechar escopo do MVP e preparar piloto com clientes.
-- **Monitorar recursos e planejar expansão horizontal conforme crescimento.**
+- Iniciar automação de onboarding e preparar o primeiro cliente teste.
+- Monitorar recursos e planejar expansão horizontal conforme crescimento.
 
 ### Marco de decisão
 - A evolução para a próxima fase deve ocorrer com evidências mínimas documentadas, mantendo o critério de avanço já definido no projeto.
-## 10) Sugestões para início do setup
 
-- Seguir checklist e scripts do Mark 0 (docs/setup/mark-0.md) para preparar a VPS
-- Registrar toda execução e decisões em docs/setup/mark-0-execution-log.md
-- Validar acesso e configuração do Coolify na VPS principal
-- Criar estrutura de diretórios Projects/ conforme modelo sugerido
-- Garantir template docker-compose reutilizável para clientes
-- Definir padrão de subdomínio para clientes (ex: {cnpj}.jitmanager.com.br)
-- Implementar script inicial de onboarding de cliente
-- Documentar política de backup e retenção diferenciada
-- Validar isolamento de rede Docker por cliente
-- Garantir checklist de segurança mínima (TLS, firewall, segredos)
-- Registrar decisões e evidências em cada etapa
+## 8) Estado operacional atual
 
-## 8) Critério de sucesso do ciclo atual
+- Base estratégica: consolidada
+- Infraestrutura inicial: validada e operacional
+- Governança de board/issues: automatizada e sincronizada
+- Mark ativo: `Mark 2`
+- Situação da plataforma: pronta para estruturar projetos e padrão operacional
+
+## 9) Critério de sucesso do ciclo atual
+
 Considera-se o ciclo atual bem-sucedido quando:
-- A base estratégica e infra inicial estiverem estáveis e documentadas.
-- O institucional estiver publicado com mensagem consistente.
-- O MVP estiver em validação com métricas objetivas de adesão e viabilidade.
+- O Mark 2 estiver concluído com estrutura de projetos, template base e padrão de subdomínios documentados.
+- A base operacional estiver pronta para automação de onboarding.
+- O board continuar alinhado com a realidade documental e operacional.
+- O projeto estiver em posição segura para iniciar o Mark 3.
 
-## 9) Documento para compartilhamento externo
-Este resumo foi preparado para comunicação executiva com stakeholders, parceiros e apoiadores, sem exposição de dados sensíveis (credenciais, chaves privadas, segredos de infraestrutura ou informações pessoais).
+## 10) Referências operacionais críticas
+
+- Operação canônica de infraestrutura: `jit-infra/setup/`
+- Automação operacional e sincronização do board: `jit-scripts/maintenance/`
+- Processo de governança: `docs/process/projects.md`
+- Rotina operacional por frequência: `docs/process/project-operations-checklist.md`
+
+## 11) Documento para compartilhamento executivo
+Este resumo serve para comunicação executiva e alinhamento interno. Para compartilhamento externo, deve ser adaptado removendo referências operacionais detalhadas e qualquer evidência que aumente exposição desnecessária da infraestrutura.

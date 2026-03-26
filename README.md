@@ -47,10 +47,17 @@ Este é o repositório de **documentação estratégica**. Os repositórios oper
 - Configuração e validação (via repository secrets): `docs/process/projects.md`
 
 ## Macrofases
-- Fase 0 - Setup de repositório e marca (concluída)
-- Fase 1 - Direcionamento da empresa
-- Fase 2 - Institucional e site
-- Fase 3 - MVP e validação de viabilidade (inclui decisão de CNPJ)
+- Fase 0 - Base estratégica e infraestrutura inicial (em andamento, com Mark 0 e Mark 1 concluídos e Mark 2 ativo)
+- Fase 1 - Direcionamento da empresa (concluída)
+- Fase 2 - Institucional e site (pendente)
+- Fase 3 - MVP e validação de viabilidade (pendente, inclui decisão de CNPJ)
+
+### Marks operacionais da Fase 0
+- Mark 0 - Preparação e endurecimento da VPS (concluído)
+- Mark 1 - Coolify, backup e operação inicial (concluído)
+- Mark 2 - Estrutura de projetos e padronização operacional (ativo)
+
+Referência operacional: `jit-infra/setup/`
 
 ## Decisão de CNPJ
 A abertura de CNPJ é tratada como marco de decisão de negócio, não como etapa inicial. A decisão será baseada em evidências da Fase 3 (interesse, conversão, operação mínima e previsibilidade de receita).

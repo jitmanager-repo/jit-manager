@@ -42,7 +42,9 @@ Principais avanços da 0.2:
 - Rotação de certificado de origem já executada como medida de higiene de segurança.
 - **Mark 0 concluído**: VPS endurecida, Docker operacional, SSH seguro, snapshot de baseline criado.
 - **Mark 1 concluído**: Coolify operacional em `coolify.jitmanager.com.br`, backup validado, notificações por Telegram funcionando, snapshot `Mark-1-Final` criado.
-- **Mark 2 iniciado**: estrutura de projetos, template base e padrão de subdomínios formalizados como próxima frente operacional.
+- **Mark 2 concluído**: estrutura de projetos, template base, padrão de subdomínios e serviços core validados.
+- **Mark 2.1 fechado com GO condicionado**: abertura do Mark 3 autorizada com restrição operacional.
+- **Mark 3A iniciado**: fundação de automação em andamento; **Mark 3B permanece bloqueado** até normalização do `task-runners` do `n8n-jit` para `healthy`.
 
 ### Fase 1 — Direcionamento da empresa (concluída)
 Entregas de posicionamento, foco inicial, proposta de valor e modelo operacional estão concluídas e registradas.
@@ -73,14 +75,14 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 ## 7) Próximos passos propostos
 
 ### Curto prazo (1 a 2 semanas)
-- Executar o **Mark 2** no `jit-infra`:
-	- criar estrutura de projetos no Coolify
-	- definir template base docker-compose
-	- formalizar padrão de subdomínios
-	- criar projeto core de serviços
-- Fechar pendências de publicação dos subdomínios de serviço com a nova estrutura.
-- Avançar avaliação do Odoo para escopo de gestão e integrações, usando como base `docs/infra/integracao-jitmanager-odoo.md`.
-- Preparar a base para o **Mark 3** (automação de onboarding e integração).
+- Executar entregáveis técnicos do **Mark 3A** no `jit-infra`:
+	- matriz de variáveis obrigatórias por serviço
+	- estratégia de secrets (origem, rotação e ownership)
+	- padrão operacional de labels/volumes/redes
+	- estratégia de idempotência e rollback
+- Planejar e implantar `redis-jit` no core conforme decisão arquitetural do Mark 3A.
+- Normalizar o `task-runners` do `n8n-jit` para liberar entrada no **Mark 3B**.
+- Manter sincronização diária de board (`Status`/`Fase`) e corpo das issues estratégicas.
 
 ### Médio prazo (2 a 4 semanas)
 - Finalizar arquitetura e copy do site institucional.
@@ -97,16 +99,16 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 - Base estratégica: consolidada
 - Infraestrutura inicial: validada e operacional
 - Governança de board/issues: automatizada e sincronizada
-- Mark ativo: `Mark 2`
-- Situação da plataforma: pronta para estruturar projetos e padrão operacional
+- Mark ativo: `Mark 3A` (liberado por GO condicionado no Mark 2.1)
+- Situação da plataforma: em execução da fundação de automação, com bloqueio explícito do Mark 3B até `task-runners` ficar `healthy`
 
 ## 9) Critério de sucesso do ciclo atual
 
 Considera-se o ciclo atual bem-sucedido quando:
-- O Mark 2 estiver concluído com estrutura de projetos, template base e padrão de subdomínios documentados.
-- A base operacional estiver pronta para automação de onboarding.
+- Os entregáveis do Mark 3A estiverem documentados e validados (padrões operacionais, matriz de variáveis, secrets, idempotência e rollback).
+- O risco de `task-runners` estiver tratado com critério objetivo para liberação do Mark 3B.
 - O board continuar alinhado com a realidade documental e operacional.
-- O projeto estiver em posição segura para iniciar o Mark 3.
+- O projeto estiver em posição segura para avançar de 3A para 3B sem desvio de governança.
 
 ## 10) Referências operacionais críticas
 

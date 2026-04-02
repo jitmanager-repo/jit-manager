@@ -44,7 +44,9 @@ Principais avanços da 0.2:
 - **Mark 1 concluído**: Coolify operacional em `coolify.jitmanager.com.br`, backup validado, notificações por Telegram funcionando, snapshot `Mark-1-Final` criado.
 - **Mark 2 concluído**: estrutura de projetos, template base, padrão de subdomínios e serviços core validados.
 - **Mark 2.1 fechado com GO condicionado**: abertura do Mark 3 autorizada com restrição operacional.
-- **Mark 3A iniciado**: fundação de automação em andamento; **Mark 3B permanece bloqueado** até normalização do `task-runners` do `n8n-jit` para `healthy`.
+- **Mark 3A em execução com entregáveis avançados**: contrato técnico, segurança, idempotência, rollback e artefatos operacionais versionados.
+- **`task-runners` normalizado para `healthy`** e em **gate de estabilidade de 24h** para liberação da execução técnica do Mark 3B.
+- **Mark 3B em andamento no escopo teórico/documental** (board em `Em andamento`), com execução técnica condicionada ao fechamento do gate.
 
 ### Fase 1 — Direcionamento da empresa (concluída)
 Entregas de posicionamento, foco inicial, proposta de valor e modelo operacional estão concluídas e registradas.
@@ -81,7 +83,8 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 	- padrão operacional de labels/volumes/redes
 	- estratégia de idempotência e rollback
 - Planejar e implantar `redis-jit` no core conforme decisão arquitetural do Mark 3A.
-- Normalizar o `task-runners` do `n8n-jit` para liberar entrada no **Mark 3B**.
+- Fechar o gate de 24h do `task-runners` com evidência objetiva e liberar execução técnica do **Mark 3B**.
+- Executar pre-check + fechamento em duas fases (`mark-3b-precheck-gate.ps1` -> `mark-3b-close-gate.ps1`).
 - Manter sincronização diária de board (`Status`/`Fase`) e corpo das issues estratégicas.
 
 ### Médio prazo (2 a 4 semanas)
@@ -100,13 +103,13 @@ Escopo de MVP, piloto com clientes, métricas e relatório de viabilidade ainda 
 - Infraestrutura inicial: validada e operacional
 - Governança de board/issues: automatizada e sincronizada
 - Mark ativo: `Mark 3A` (liberado por GO condicionado no Mark 2.1)
-- Situação da plataforma: em execução da fundação de automação, com bloqueio explícito do Mark 3B até `task-runners` ficar `healthy`
+- Situação da plataforma: fundação de automação consolidada, `task-runners` em `healthy` e gate de estabilidade de 24h em andamento para transição técnica do Mark 3B
 
 ## 9) Critério de sucesso do ciclo atual
 
 Considera-se o ciclo atual bem-sucedido quando:
 - Os entregáveis do Mark 3A estiverem documentados e validados (padrões operacionais, matriz de variáveis, secrets, idempotência e rollback).
-- O risco de `task-runners` estiver tratado com critério objetivo para liberação do Mark 3B.
+- O gate de 24h do `task-runners` for fechado com evidência objetiva (sem reinício inesperado e sem recorrência DNS/banco).
 - O board continuar alinhado com a realidade documental e operacional.
 - O projeto estiver em posição segura para avançar de 3A para 3B sem desvio de governança.
 

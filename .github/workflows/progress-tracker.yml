@@ -59,7 +59,7 @@ jobs:
           ISSUE="${{ steps.resolve.outputs.issue }}"
           TARGET_REPO="${{ steps.resolve.outputs.repo }}"
           BODY_FILE=$(mktemp)
-          printf '**commit** [`%s`](%s) · `%s`\n\n```\n%s\n```\n' \
+          printf '**commit** [`%s`](%s) - `%s`\n\n```\n%s\n```\n' \
             "$SHORT" "$URL" "$SOURCE" "$COMMIT_MSG" > "$BODY_FILE"
           gh issue comment "$ISSUE" \
             --repo "jitmanager-repo/$TARGET_REPO" \

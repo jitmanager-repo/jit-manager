@@ -1,0 +1,66 @@
+name: Progress Tracker
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    env:
+      COMMIT_MSG: ${{ github.event.head_commit.message }}
+    steps:
+      - name: Extract phase from commit message
+        id: phase
+        run: |
+          PHASE=$(echo "$COMMIT_MSG" | grep -oP '(?<=\()mark-\d+[a-z]?(?=\))' | head -1 | tr '[:upper:]' '[:lower:]')
+          if [ -z "$PHASE" ]; then
+            echo "No phase found in commit message, skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "phase=$PHASE" >> "$GITHUB_OUTPUT"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Resolve issue from phase map
+        if: steps.phase.outputs.skip != 'true'
+        id: resolve
+        env:
+          GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+        run: |
+          PHASE="${{ steps.phase.outputs.phase }}"
+          curl -sf \
+            -H "Authorization: token $GH_TOKEN" \
+            "https://raw.githubusercontent.com/jitmanager-repo/jit-infra/main/setup/phase-map.json" \
+            -o phase-map.json
+          ISSUE=$(jq -r --arg p "$PHASE" '.[$p].issue // empty' phase-map.json)
+          REPO=$(jq -r --arg p "$PHASE" '.[$p].repo // empty' phase-map.json)
+          if [ -z "$ISSUE" ] || [ "$ISSUE" = "null" ]; then
+            echo "Phase '$PHASE' not in phase-map, skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "issue=$ISSUE" >> "$GITHUB_OUTPUT"
+            echo "repo=$REPO" >> "$GITHUB_OUTPUT"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Post comment to issue
+        if: steps.resolve.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+        run: |
+          SHORT="${{ github.sha }}"
+          SHORT="${SHORT:0:7}"
+          URL="${{ github.event.head_commit.url }}"
+          SOURCE="${{ github.repository }}"
+          ISSUE="${{ steps.resolve.outputs.issue }}"
+          TARGET_REPO="${{ steps.resolve.outputs.repo }}"
+          BODY_FILE=$(mktemp)
+          printf '**commit** [`%s`](%s) · `%s`\n\n```\n%s\n```\n' \
+            "$SHORT" "$URL" "$SOURCE" "$COMMIT_MSG" > "$BODY_FILE"
+          gh issue comment "$ISSUE" \
+            --repo "jitmanager-repo/$TARGET_REPO" \
+            --body-file "$BODY_FILE"
